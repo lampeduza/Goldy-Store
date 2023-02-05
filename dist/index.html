@@ -14,7 +14,37 @@
     <title>Goldy Store | Ювелирный магазин</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <section class="header__cities cities">
+        <h2 class="visually-hidden">Список городов</h2>
+        <div class="cities__container">
+          <p class="cities__value">
+            <svg width="12" height="16" aria-hidden="true">
+              <use href="img/sprite.svg#location"></use>
+            </svg><span class="cities__city">Санкт-Петербург</span>
+            <svg width="12" height="16" aria-hidden="true">
+              <use href="img/sprite.svg#arrow-up"></use>
+            </svg>
+          </p>
+          <ul class="cities__list">
+            <li class="cities__item"><a class="cities__link" href="#">Санкт-Петербург</a></li>
+            <li class="cities__item"><a class="cities__link" href="#">Москва</a></li>
+            <li class="cities__item"><a class="cities__link" href="#">Нижний Новгород</a></li>
+            <li class="cities__item"><a class="cities__link" href="#">Ростов-на-Дону</a></li>
+          </ul>
+        </div>
+      </section><a class="header__number" href="tel:88007852535">
+        <svg width="16" height="16" aria-hidden="true">
+          <use href="img/sprite.svg#phone"></use>
+        </svg>8 800 785-25-35</a><a class="header__logo logo" href="#">
+        <svg width="183" height="54" aria-hidden="true">
+          <use href="img/sprite.svg#logo"></use>
+        </svg></a>
+      <section class="header__user-panel user-panel">
+        <h2 class="visually-hidden">Панель входа и регистрации</h2>
+        <p class="user-panel__data"><a class="user-panel__link" href="#log-in">Вход</a>|<a class="user-panel__link" href="#sign-up">Регистрация</a></p>
+      </section>
+    </header>
     <script src="js/main.js"></script>
   </body>
 </html>

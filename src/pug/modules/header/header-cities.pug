@@ -1,0 +1,13 @@
+include header-cities-data
+
+section.header__cities.cities
+	h2.visually-hidden Список городов
+	.cities__container
+		p.cities__value
+			+icon('location', '12', '16')
+			span.cities__city Санкт-Петербург
+			+icon('arrow-up', '12', '16')
+		ul.cities__list
+			each city in cities
+				li.cities__item
+					a.cities__link(href="#")= city

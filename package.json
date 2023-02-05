@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "global": "^4.4.0",
+    "install": "^0.13.0",
     "node": "^19.2.0"
   }
 }

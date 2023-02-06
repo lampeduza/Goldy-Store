@@ -44,7 +44,160 @@
         <h2 class="visually-hidden">Панель входа и регистрации</h2>
         <p class="user-panel__data"><a class="user-panel__link" href="#log-in">Вход</a>|<a class="user-panel__link" href="#sign-up">Регистрация</a></p>
       </section>
+      <section class="header__additional-panel additional-panel">
+        <h2 class="visually-hidden">Дополнительная панель пользователя</h2>
+        <ul class="additional-panel__list">
+          <li class="additional-panel__item"><a class="additional-panel__link" href="#favorite.html" title="Понравившиеся товары"><span class="additional-panel__counter">23</span>
+              <svg width="20" height="20" aria-hidden="true">
+                <use href="img/sprite.svg#favorite"></use>
+              </svg></a></li>
+          <li class="additional-panel__item"><a class="additional-panel__link" href="#chart.html" title="Графики цен">
+              <svg width="20" height="20" aria-hidden="true">
+                <use href="img/sprite.svg#chart"></use>
+              </svg></a></li>
+          <li class="additional-panel__item"><a class="additional-panel__link" href="#bag.html" title="Корзина">
+              <svg width="20" height="20" aria-hidden="true">
+                <use href="img/sprite.svg#bag"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+      <section class="header__navigation navigation">
+        <h2 class="visually-hidden">Главная навигация</h2>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#catalog.html">Каталог</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#stocks.html">Акции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#brands.html">Бренды</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#shops.html">Магазины</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#about.html">О нас</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#delivery.html">Доставка и оплата</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#articles.html">Статьи</a></li>
+        </ul>
+      </section>
+      <section class="header__search search">
+        <h2 class="visually-hidden">Пользовательский поиск по сайту</h2>
+        <form class="search__form" action="#" method="post">
+          <div class="search__container">
+            <button class="search__search" type="button" aria-label="Кнопка поиска">
+              <svg width="20" height="20" aria-hidden="true">
+                <use href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <label class="visually-hidden" for="search-field">Поиск</label>
+            <input class="search__field" type="text" name="search-field" id="search-field" placeholder="Поиск по сайту">
+          </div>
+        </form>
+      </section>
     </header>
+    <main class="main">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Горячие предложения</h2>
+          <ul class="promo__slider slider">
+            <li class="slider__slide slide">
+              <svg width="833" height="643" aria-hidden="true">
+                <use href="img/sprite.svg#diamond-background"></use>
+              </svg>
+              <div class="slide__content">
+                <p class="slide__text">Суперскидка до 60%</p>
+                <h3 class="slide__title">На бриллианты</h3><a class="slide__link" href="#diamonds.html" title="Перейти на страницу с данным предложением">Подробнее</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/diamond-ring.webp, img/diamond-ring@2x.webp 2x"/><img src="img/diamond-ring.png" srcset="img/diamond-ring@2x.png 2x" width="548" height="548" alt="Кольцо с бриллиантами" title="Кольцо с бриллиантами"/>
+              </picture>
+            </li>
+            <li class="slider__slide slide">
+              <svg width="833" height="643" aria-hidden="true">
+                <use href="img/sprite.svg#diamond-background"></use>
+              </svg>
+              <div class="slide__content">
+                <p class="slide__text">Суперскидка до 60%</p>
+                <h3 class="slide__title">На бриллианты</h3><a class="slide__link" href="#diamonds.html" title="Перейти на страницу с данным предложением">Подробнее</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/diamond-ring.webp, img/diamond-ring@2x.webp 2x"/><img src="img/diamond-ring.png" srcset="img/diamond-ring@2x.png 2x" width="548" height="548" alt="Кольцо с бриллиантами" title="Кольцо с бриллиантами"/>
+              </picture>
+            </li>
+            <li class="slider__slide slide">
+              <svg width="833" height="643" aria-hidden="true">
+                <use href="img/sprite.svg#diamond-background"></use>
+              </svg>
+              <div class="slide__content">
+                <p class="slide__text">Суперскидка до 60%</p>
+                <h3 class="slide__title">На бриллианты</h3><a class="slide__link" href="#diamonds.html" title="Перейти на страницу с данным предложением">Подробнее</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/diamond-ring.webp, img/diamond-ring@2x.webp 2x"/><img src="img/diamond-ring.png" srcset="img/diamond-ring@2x.png 2x" width="548" height="548" alt="Кольцо с бриллиантами" title="Кольцо с бриллиантами"/>
+              </picture>
+            </li>
+          </ul>
+          <ul class="slider__controls controls">
+            <li class="controls__control">
+              <button class="control__button" type="button" aria-label="Предыдущий слайд">
+                <svg width="54" height="54" aria-hidden="true">
+                  <use href="img/sprite.svg#previous"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="controls__control">
+              <button class="control__button" type="button" aria-label="Следующий слайд">
+                <svg width="54" height="54" aria-hidden="true">
+                  <use href="img/sprite.svg#next"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="promo__dots dots">
+            <li class="dots__dot dots__dot--current">
+              <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+            </li>
+            <li class="dots__dot">
+              <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+            </li>
+            <li class="dots__dot">
+              <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="popular">
+        <h2 class="popular__title">Популярные категории</h2>
+        <ul class="popular__list">
+          <li class="popular__item"><a class="popular__link" href="#ring.html">
+              <picture>
+                <source type="image/webp" srcset="img/ring.webp, img/ring@2x.webp 2x"/><img src="img/ring.png" srcset="img/ring@2x.png 2x" width="127" height="100" alt="Кольца" title="Кольца"/>
+              </picture>
+              <h3 class="popular__heading">Кольца</h3></a></li>
+          <li class="popular__item"><a class="popular__link" href="#earrings.html">
+              <picture>
+                <source type="image/webp" srcset="img/earrings.webp, img/earrings@2x.webp 2x"/><img src="img/earrings.png" srcset="img/earrings@2x.png 2x" width="102" height="130" alt="Серьги" title="Серьги"/>
+              </picture>
+              <h3 class="popular__heading">Серьги</h3></a></li>
+          <li class="popular__item"><a class="popular__link" href="#engagement rings.html">
+              <picture>
+                <source type="image/webp" srcset="img/engagement rings.webp, img/engagement rings@2x.webp 2x"/><img src="img/engagement rings.png" srcset="img/engagement rings@2x.png 2x" width="117" height="93" alt="Помолвочные кольца" title="Помолвочные кольца"/>
+              </picture>
+              <h3 class="popular__heading">Помолвочные кольца</h3></a></li>
+          <li class="popular__item"><a class="popular__link" href="#bracelet.html">
+              <picture>
+                <source type="image/webp" srcset="img/bracelet.webp, img/bracelet@2x.webp 2x"/><img src="img/bracelet.png" srcset="img/bracelet@2x.png 2x" width="141" height="118" alt="Браслеты" title="Браслеты"/>
+              </picture>
+              <h3 class="popular__heading">Браслеты</h3></a></li>
+          <li class="popular__item"><a class="popular__link" href="#necklaces and pendants.html">
+              <picture>
+                <source type="image/webp" srcset="img/necklaces and pendants.webp, img/necklaces and pendants@2x.webp 2x"/><img src="img/necklaces and pendants.png" srcset="img/necklaces and pendants@2x.png 2x" width="128" height="128" alt="Колье и подвески" title="Колье и подвески"/>
+              </picture>
+              <h3 class="popular__heading">Колье и подвески</h3></a></li>
+          <li class="popular__item"><a class="popular__link" href="#watch.html">
+              <picture>
+                <source type="image/webp" srcset="img/watch.webp, img/watch@2x.webp 2x"/><img src="img/watch.png" srcset="img/watch@2x.png 2x" width="122" height="147" alt="Часы" title="Часы"/>
+              </picture>
+              <h3 class="popular__heading">Часы</h3></a></li>
+        </ul>
+      </section>
+      <section class="sale">
+        <h2 class="sale__title">Распродажа</h2>
+      </section>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

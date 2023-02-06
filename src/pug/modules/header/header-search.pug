@@ -1,0 +1,9 @@
+section.header__search.search
+	h2.visually-hidden Пользовательский поиск по сайту
+	//- Форму можно верстать без классов, для последующего удобства работы с cms
+	form.search__form(action="#" method="post")
+		.search__container
+			button.search__search(type="button" aria-label="Кнопка поиска")
+				+icon('search', '20', '20')
+			label.visually-hidden(for="search-field") Поиск
+			input.search__field(type="text" name="search-field" id="search-field" placeholder="Поиск по сайту")

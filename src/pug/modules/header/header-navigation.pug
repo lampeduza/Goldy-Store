@@ -1,0 +1,8 @@
+include header-navigation-data
+
+section.header__navigation.navigation
+	h2.visually-hidden Главная навигация
+	ul.navigation__list
+		each link in links
+			li.navigation__item
+				a.navigation__link(href=`#${link.anchor}.html`)= link.text

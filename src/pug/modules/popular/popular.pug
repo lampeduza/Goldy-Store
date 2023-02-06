@@ -1,0 +1,10 @@
+include popular-data
+
+section.popular
+	h2.popular__title Популярные категории
+	ul.popular__list
+		each popular in populars
+			li.popular__item
+				a.popular__link(href=`#${popular.imagePath}.html`)
+					+picture(`${popular.imagePath}`, 'png', `${popular.imageWidth}`, `${popular.imageHeight}`, `${popular.text}`, `${popular.text}`)
+					h3.popular__heading= popular.text

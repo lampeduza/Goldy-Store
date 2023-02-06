@@ -1,0 +1,22 @@
+include promo-data
+include ../controls-data
+
+section.promo
+	.promo__wrapper
+		h2.visually-hidden Горячие предложения
+		ul.promo__slider.slider
+			each slide in slides
+				//- Слайд можно вынести в отдельный mixin или сделать шаблон слайда
+				li.slider__slide.slide
+					+icon('diamond-background', '833', '643')
+					.slide__content
+						p.slide__text= slide.text
+						h3.slide__title= slide.title
+						a.slide__link(href=`#${slide.linkAnchor}.html` title= slide.linkInfo)= slide.linkText
+					+picture(`${slide.imagePath}`, 'png', `${slide.imageWidth}`, `${slide.imageHeight}`, `${slide.imageDescription}`, `${slide.imageDescription}`)
+		+controls(controls)
+		//- Также можно вынести дополнительные контролы для слайдера в mixin
+		ul.promo__dots.dots
+			each dot in dots
+				li.dots__dot(class=`${dot.current ? 'dots__dot--current' : ''}`)
+					button.dots__button(type="button" aria-label= dot.description)

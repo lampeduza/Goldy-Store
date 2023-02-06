@@ -1,0 +1,5 @@
+mixin card-images-list(card)
+	ul.card__images
+		each image in card.images
+			li.card__image
+				+picture(`${image.path}`, 'jpg', `${image.width}`, `${image.height}`, `${image.description}`, `${image.description}`)

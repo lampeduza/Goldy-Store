@@ -1,0 +1,7 @@
+mixin tabs(tabs = [])
+	section.tabs
+		h2.visually-hidden Выберете категорию
+		ul.tabs__list
+			each tab in tabs
+				li.tabs__item(class= tab.current ? 'tabs__item--current' : '')
+					button.tabs__button(type="button")= tab.text

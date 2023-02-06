@@ -1,2 +1,31 @@
+include ../tabs-data
+include ../card-button-data
+include sale-data
+
 section.sale
 	h2.sale__title Распродажа
+	+tabs(tabs)
+	+controls(controls)
+	ul.sale__list.cards
+		each card in cards
+			if card.sale
+				li.cards__item
+					article.cards__card.card
+						h3.visually-hidden Кольцо из белого золота с бриллиантами
+						span.card__sale= card.saleText
+						+card-buttons(buttons)
+						+card-images-list(card)
+						.card__content
+							span.card__current-price= card.actualPrice
+							del.card__old-price= card.oldPrice
+							span.card__discount= card.discount
+							p.card__text= card.text
+			else
+				li.cards__item
+					article.cards__card.card
+						h3.visually-hidden Кольцо из белого золота с бриллиантами
+						+card-buttons(buttons)
+						+card-images-list(card)
+						.card__content
+							span.card__current-price= card.actualPrice
+							p.card__text= card.text

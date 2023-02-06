@@ -1,0 +1,6 @@
+mixin card-buttons(buttons = [])
+  ul.card__buttons
+    each button in buttons
+      li.card__element
+        button.card__button(type="button" aria-label= button.description)
+          +icon(`${button.iconName}`, `${button.iconWidth}`, `${button.iconHeight}`)

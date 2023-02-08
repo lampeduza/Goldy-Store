@@ -23,6 +23,7 @@ $list-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .cities__list {
+	width: max-content;
 	@include lib.reset-list;
 	background-color: $list-background;
 	box-shadow: $list-shadow;
@@ -31,6 +32,7 @@ $list-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 
 	position: absolute;
 	top: 28px;
+	z-index: 2;
 
 	display: none;
 }

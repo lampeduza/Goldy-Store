@@ -1,0 +1,16 @@
+mixin goods(goods = [])
+	ul.day-product__goods.goods
+		each good in goods
+			li.goods__item
+				.goods__visual
+					each image in good.images
+						+picture(`${image.path}`, `jpg`, `${image.width}`, `${image.height}`, `${image.description}`, `${image.description}`)
+					+image-controls(good)
+				.goods__content
+					+rating(good)
+					h3.goods__title= good.title
+					span.goods__code= `Артикул: ${good.code}`
+					span.goods__current-price= good.currentPrice
+					del.goods__old-price= good.oldPrice
+					+colors(good)
+					+sizes(good)

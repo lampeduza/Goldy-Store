@@ -15,6 +15,7 @@ section.sale
 						span.card__sale= card.saleText
 						+card-buttons(buttons)
 						+card-images-list(card)
+						+dots(dots)(class="card__dots")
 						.card__content
 							span.card__current-price= card.actualPrice
 							del.card__old-price= card.oldPrice
@@ -26,6 +27,8 @@ section.sale
 						h3.visually-hidden Кольцо из белого золота с бриллиантами
 						+card-buttons(buttons)
 						+card-images-list(card)
+						+dots(dots)(class="card__dots")
 						.card__content
 							span.card__current-price= card.actualPrice
 							p.card__text= card.text
+	include sale-secondary

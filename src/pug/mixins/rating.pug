@@ -1,0 +1,7 @@
+mixin rating(good)
+	section.goods__rating.rating
+		h2.visually-hidden Рейтинг изделия
+		ul.rating__list
+			each star in good.ratingList
+				li.rating__element
+					+icon(`${star.name === 'full-star' ? 'full-star' : 'empty-star'}`, '17', '16')

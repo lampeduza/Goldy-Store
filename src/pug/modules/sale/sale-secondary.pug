@@ -1,0 +1,13 @@
+include sale-secondary-data
+
+.sale__secondary
+	h3.visually-hidden Дополнительные скидки на украшения по категориям
+	ul.sale__secondary-list
+		each card in cards
+			li.sale__secondary-item
+				a.sale__secondary-link(href=`#${card.anchor}.html` title= card.title)
+					h3.sale__secondary-title= card.title
+					p.sale__secondary-discount
+						.
+							До
+						span.sale__secondary-discount= card.discount

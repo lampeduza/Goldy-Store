@@ -1,0 +1,5 @@
+mixin dots(dots = [])
+	ul.dots&attributes(attributes)
+		each dot in dots
+			li.dots__dot(class=`${dot.current ? 'dots__dot--current' : ''}`)
+				button.dots__button(type="button" aria-label= dot.description)

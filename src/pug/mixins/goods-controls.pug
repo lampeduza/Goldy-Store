@@ -1,0 +1,6 @@
+mixin goods-controls(controls = [])
+	ul.day-product__controls
+		each control in controls
+			li.day-product__control
+				button.day-product__button(type= control.type aria-label= control.description)
+					+icon(`${control.iconName}`, `${control.iconWidth}`, `${control.iconHeight}`)

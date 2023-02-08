@@ -1,4 +1,5 @@
 include promo-data
+include promo-dots-data
 include ../controls-data
 
 section.promo
@@ -16,7 +17,4 @@ section.promo
 					+picture(`${slide.imagePath}`, 'png', `${slide.imageWidth}`, `${slide.imageHeight}`, `${slide.imageDescription}`, `${slide.imageDescription}`)
 		+controls(controls)
 		//- Также можно вынести дополнительные контролы для слайдера в mixin
-		ul.promo__dots.dots
-			each dot in dots
-				li.dots__dot(class=`${dot.current ? 'dots__dot--current' : ''}`)
-					button.dots__button(type="button" aria-label= dot.description)
+		+dots(dots)

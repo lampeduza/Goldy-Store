@@ -1,0 +1,7 @@
+mixin colors(good)
+	section.colors
+		h3.colors__title Цвет
+		ul.colors__list
+			each color in good.colors
+				li.colors__item
+					button.colors__button(type="button" aria-label=`Изделие ${color.color} цвета`)

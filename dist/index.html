@@ -16,78 +16,80 @@
   </head>
   <body>
     <header class="header">
-      <section class="header__cities cities">
-        <h2 class="visually-hidden">Список городов</h2>
-        <div class="cities__container">
-          <button class="cities__value" type="button">
-            <svg width="12" height="16" aria-hidden="true">
-              <use href="img/sprite.svg#location"></use>
-            </svg><span class="cities__city">Санкт-Петербург</span>
-            <svg width="9" height="6" aria-hidden="true">
-              <use href="img/sprite.svg#arrow-down"></use>
-            </svg>
-          </button>
-          <ul class="cities__list">
-            <li class="cities__item"><a class="cities__link cities__link--current" href="#">Санкт-Петербург</a></li>
-            <li class="cities__item"><a class="cities__link" href="#">Москва</a></li>
-            <li class="cities__item"><a class="cities__link" href="#">Нижний Новгород</a></li>
-            <li class="cities__item"><a class="cities__link" href="#">Ростов-на-Дону</a></li>
-          </ul>
-        </div>
-      </section><a class="header__number" href="tel:88007852535">
-        <svg width="16" height="16" aria-hidden="true">
-          <use href="img/sprite.svg#phone"></use>
-        </svg>8 800 785-25-35</a><a class="header__logo logo" href="#">
-        <svg width="183" height="54" aria-hidden="true">
-          <use href="img/sprite.svg#logo"></use>
-        </svg></a>
-      <section class="header__user-panel user-panel">
-        <h2 class="visually-hidden">Панель входа и регистрации</h2>
-        <p class="user-panel__data"><a class="user-panel__link" href="#log-in">Вход</a>&nbsp;|&nbsp;<a class="user-panel__link" href="#sign-up">Регистрация</a></p>
-      </section>
-      <section class="header__additional-panel additional-panel">
-        <h2 class="visually-hidden">Дополнительная панель пользователя</h2>
-        <ul class="additional-panel__list">
-          <li class="additional-panel__item"><a class="additional-panel__link" href="#favorite.html" title="Понравившиеся товары"><span class="additional-panel__counter">23</span>
-              <svg width="20" height="20" aria-hidden="true">
-                <use href="img/sprite.svg#favorite"></use>
-              </svg></a></li>
-          <li class="additional-panel__item"><a class="additional-panel__link" href="#chart.html" title="Графики цен">
-              <svg width="20" height="20" aria-hidden="true">
-                <use href="img/sprite.svg#chart"></use>
-              </svg></a></li>
-          <li class="additional-panel__item"><a class="additional-panel__link" href="#bag.html" title="Корзина">
-              <svg width="20" height="20" aria-hidden="true">
-                <use href="img/sprite.svg#bag"></use>
-              </svg></a></li>
-        </ul>
-      </section>
-      <section class="header__navigation navigation">
-        <h2 class="visually-hidden">Главная навигация</h2>
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#catalog.html">Каталог</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#stocks.html">Акции</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#brands.html">Бренды</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#shops.html">Магазины</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#about.html">О нас</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#delivery.html">Доставка и оплата</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#articles.html">Статьи</a></li>
-        </ul>
-      </section>
-      <section class="header__search search">
-        <h2 class="visually-hidden">Пользовательский поиск по сайту</h2>
-        <form class="search__form" action="#" method="post">
-          <div class="search__container">
-            <button class="search__search" type="button" aria-label="Кнопка поиска">
-              <svg width="20" height="20" aria-hidden="true">
-                <use href="img/sprite.svg#search"></use>
+      <div class="header__wrapper container">
+        <section class="header__cities cities">
+          <h2 class="visually-hidden">Список городов</h2>
+          <div class="cities__container">
+            <button class="cities__value" type="button">
+              <svg width="12" height="16" aria-hidden="true">
+                <use href="img/sprite.svg#location"></use>
+              </svg><span class="cities__city">Санкт-Петербург</span>
+              <svg width="9" height="6" aria-hidden="true">
+                <use href="img/sprite.svg#arrow-down"></use>
               </svg>
             </button>
-            <label class="visually-hidden" for="search-field">Поиск</label>
-            <input class="search__field" type="text" name="search-field" id="search-field" placeholder="Поиск по сайту">
+            <ul class="cities__list">
+              <li class="cities__item"><a class="cities__link cities__link--current" href="#">Санкт-Петербург</a></li>
+              <li class="cities__item"><a class="cities__link" href="#">Москва</a></li>
+              <li class="cities__item"><a class="cities__link" href="#">Нижний Новгород</a></li>
+              <li class="cities__item"><a class="cities__link" href="#">Ростов-на-Дону</a></li>
+            </ul>
           </div>
-        </form>
-      </section>
+        </section><a class="header__number" href="tel:88007852535">
+          <svg width="16" height="16" aria-hidden="true">
+            <use href="img/sprite.svg#phone"></use>
+          </svg>8 800 785-25-35</a><a class="header__logo logo" href="#">
+          <svg width="183" height="54" aria-hidden="true">
+            <use href="img/sprite.svg#logo"></use>
+          </svg></a>
+        <section class="header__user-panel user-panel">
+          <h2 class="visually-hidden">Панель входа и регистрации</h2>
+          <p class="user-panel__data"><a class="user-panel__link" href="#log-in">Вход</a>&nbsp;|&nbsp;<a class="user-panel__link" href="#sign-up">Регистрация</a></p>
+        </section>
+        <section class="header__additional-panel additional-panel">
+          <h2 class="visually-hidden">Дополнительная панель пользователя</h2>
+          <ul class="additional-panel__list">
+            <li class="additional-panel__item"><a class="additional-panel__link" href="#favorite.html" title="Понравившиеся товары"><span class="additional-panel__counter">23</span>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="img/sprite.svg#favorite"></use>
+                </svg></a></li>
+            <li class="additional-panel__item"><a class="additional-panel__link" href="#chart.html" title="Графики цен">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="img/sprite.svg#chart"></use>
+                </svg></a></li>
+            <li class="additional-panel__item"><a class="additional-panel__link" href="#bag.html" title="Корзина">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="img/sprite.svg#bag"></use>
+                </svg></a></li>
+          </ul>
+        </section>
+        <section class="header__navigation navigation">
+          <h2 class="visually-hidden">Главная навигация</h2>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#catalog.html">Каталог</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#stocks.html">Акции</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#brands.html">Бренды</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#shops.html">Магазины</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#about.html">О нас</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#delivery.html">Доставка и оплата</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#articles.html">Статьи</a></li>
+          </ul>
+          <section class="navigation__search search">
+            <h2 class="visually-hidden">Пользовательский поиск по сайту</h2>
+            <form class="search__form" action="#" method="post">
+              <div class="search__container">
+                <button class="search__search" type="button" aria-label="Кнопка поиска">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <label class="visually-hidden" for="search-field">Поиск</label>
+                <input class="search__field" type="text" name="search-field" id="search-field" placeholder="Поиск по сайту">
+              </div>
+            </form>
+          </section>
+        </section>
+      </div>
     </header>
     <main class="main">
       <section class="promo">

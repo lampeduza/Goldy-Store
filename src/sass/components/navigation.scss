@@ -1,0 +1,40 @@
+@use './global/library.scss' as lib;
+
+$navigation-background: #F8F8F8;
+
+.navigation {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto 303px;
+	gap: 20px;
+	background-color: $navigation-background;
+}
+
+.navigation__list {
+	@include lib.reset-list;
+	display: flex;
+	align-items: center;
+	padding: 25px 0 25px 50px;
+	width: max-content;
+}
+
+.navigation__item {
+	margin-right: 60px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.navigation__link {
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	color: inherit;
+	text-transform: uppercase;
+
+	&--current {
+		opacity: 0.5;
+	}
+}

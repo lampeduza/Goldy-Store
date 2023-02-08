@@ -1,0 +1,39 @@
+@use './global/library.scss' as lib;
+
+$field-color: #A2A2A2;
+$form-border: 1px solid #F0F0F0;
+
+.search__form {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	border-left: $form-border;
+}
+
+.search__container {
+	display: flex;
+	align-items: center;
+}
+
+.search__search {
+	display: flex;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	margin-left: 24px;
+}
+
+.search__field {
+	font-family: lib.$primary-font;
+	font-size: inherit;
+	line-height: 14px;
+	font-weight: 400;
+	color: $field-color;
+	border: none;
+	background-color: transparent;
+	padding-left: 12px;
+
+	&::placeholder {
+		color: $field-color;
+	}
+}

@@ -5,4 +5,5 @@ section.header__navigation.navigation
 	ul.navigation__list
 		each link in links
 			li.navigation__item
-				a.navigation__link(href=`#${link.anchor}.html`)= link.text
+				a.navigation__link(class= link.current ? 'navigation__link--current' : '' href=`#${link.anchor}.html`)= link.text
+	include header-search

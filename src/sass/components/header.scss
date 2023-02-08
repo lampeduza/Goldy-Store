@@ -1,3 +1,16 @@
+.header__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 24px 0 20px 0;
+}
+
+.header__cities {
+	margin-right: 60px;
+}
+
 .header__number {
 	line-height: 14px;
 	color: inherit;
@@ -6,8 +19,17 @@
 	align-items: center;
 	width: max-content;
 	text-decoration: none;
+	margin-right: auto;
 
 	svg {
 		margin-right: 10px;
 	}
+}
+
+.header__logo {
+	margin-right: auto;
+}
+
+.header__user-panel {
+	margin-right: 70px;
 }

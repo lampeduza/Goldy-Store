@@ -176,6 +176,22 @@ picture {
 }
 .container {
   max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 24px 0 20px 0;
+}
+
+.header__cities {
+  margin-right: 60px;
 }
 
 .header__number {
@@ -189,9 +205,18 @@ picture {
   width: -moz-max-content;
   width: max-content;
   text-decoration: none;
+  margin-right: auto;
 }
 .header__number svg {
   margin-right: 10px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__user-panel {
+  margin-right: 70px;
 }
 
 .logo {
@@ -199,6 +224,92 @@ picture {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 303px;
+  gap: 20px;
+  background-color: #F8F8F8;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 25px 0 25px 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.navigation__item {
+  margin-right: 60px;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__link {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+.navigation__link--current {
+  opacity: 0.5;
+}
+
+.search__form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%;
+  border-left: 1px solid #F0F0F0;
+}
+
+.search__container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.search__search {
+  display: -webkit-box;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 24px;
+}
+
+.search__field {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: inherit;
+  line-height: 14px;
+  font-weight: 400;
+  color: #A2A2A2;
+  border: none;
+  background-color: transparent;
+  padding-left: 12px;
+}
+.search__field::-webkit-input-placeholder {
+  color: #A2A2A2;
+}
+.search__field::-moz-placeholder {
+  color: #A2A2A2;
+}
+.search__field::placeholder {
+  color: #A2A2A2;
 }
 
 .additional-panel__list {

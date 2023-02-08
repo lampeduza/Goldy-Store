@@ -6,3 +6,39 @@
 
 /* components */
 @use './components/container.scss';
+
+/* HEADER */
+@use './components/logo.scss';
+@use './components/navigation.scss';
+@use './components/search.scss';
+@use './components/additional-panel.scss';
+@use './components/cities.scss';
+@use './components/user-panel.scss';
+
+/* PROMO */
+@use './components/promo.scss';
+
+/* POPULAR */
+@use './components/popular.scss';
+
+/* SALE */
+@use './components/sale.scss';
+@use './components/cards.scss';
+@use './components/card.scss';
+
+/* ARTICLES */
+@use './components/articles.scss';
+
+/* DAY PRODUCT */
+@use './components/day-product.scss';
+@use './components/goods.scss';
+@use './components/rating.scss';
+@use './components/colors.scss';
+@use './components/sizes.scss';
+@use './components/buttons.scss';
+
+
+/* unnamed components */
+@use './components/controls.scss';
+@use './components/dots.scss';
+@use './components/tabs.scss';

@@ -497,38 +497,40 @@
               </ul>
             </div>
             <div class="goods__content">
-              <section class="goods__rating rating">
-                <h2 class="visually-hidden">Рейтинг изделия</h2>
-                <ul class="rating__list">
-                  <li class="rating__element">
-                    <svg width="17" height="16" aria-hidden="true">
-                      <use href="img/sprite.svg#full-star"></use>
-                    </svg>
-                  </li>
-                  <li class="rating__element">
-                    <svg width="17" height="16" aria-hidden="true">
-                      <use href="img/sprite.svg#full-star"></use>
-                    </svg>
-                  </li>
-                  <li class="rating__element">
-                    <svg width="17" height="16" aria-hidden="true">
-                      <use href="img/sprite.svg#full-star"></use>
-                    </svg>
-                  </li>
-                  <li class="rating__element">
-                    <svg width="17" height="16" aria-hidden="true">
-                      <use href="img/sprite.svg#full-star"></use>
-                    </svg>
-                  </li>
-                  <li class="rating__element">
-                    <svg width="17" height="16" aria-hidden="true">
-                      <use href="img/sprite.svg#empty-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </section>
-              <h3 class="goods__title">Кольцо из золота с бриллиантами</h3><span class="goods__code">Артикул: 1012076</span><span class="goods__current-price">22 000 ₽</span>
-              <del class="goods__old-price">22 000 ₽</del>
+              <header class="goods__header">
+                <section class="goods__rating rating">
+                  <h2 class="visually-hidden">Рейтинг изделия</h2>
+                  <ul class="rating__list">
+                    <li class="rating__element">
+                      <svg width="17" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#full-star"></use>
+                      </svg>
+                    </li>
+                    <li class="rating__element">
+                      <svg width="17" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#full-star"></use>
+                      </svg>
+                    </li>
+                    <li class="rating__element">
+                      <svg width="17" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#full-star"></use>
+                      </svg>
+                    </li>
+                    <li class="rating__element">
+                      <svg width="17" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#full-star"></use>
+                      </svg>
+                    </li>
+                    <li class="rating__element">
+                      <svg width="17" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#empty-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </section>
+                <h3 class="goods__title">Кольцо из золота с бриллиантами</h3><span class="goods__code">Артикул: 1012076</span><span class="goods__current-price">22 000 ₽</span>
+                <del class="goods__old-price">22 000 ₽</del>
+              </header>
               <section class="colors">
                 <h3 class="colors__title">Цвет</h3>
                 <ul class="colors__list">
@@ -548,6 +550,12 @@
               </section>
               <section class="sizes">
                 <h3 class="sizes__title">Размеры</h3>
+                <div class="sizes__tooltip"><span class="sizes__tooltip-symbol">?</span>
+                  <p class="sizes__tooltip-text">
+                    Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.
+                    
+                  </p>
+                </div>
                 <ul class="sizes__list">
                   <li class="sizes__item">
                     <button class="sizes__button" type="button" aria-label="Размер кольца 16,5">16,5</button>
@@ -581,9 +589,44 @@
                   </li>
                 </ul>
               </section>
+              <ul class="goods__buttons buttons">
+                <li class="buttons__element">
+                  <button class="buttons__button" type="button" aria-label="Положите товар в корзину">в корзину</button>
+                </li>
+                <li class="buttons__element"><a class="buttons__button buttons__button--link" href="#payment.html" title="Перейти на страницу оформления товара">купить в 1 клик</a>
+                </li>
+              </ul>
+              <section class="goods__navigation">
+                <h3 class="visually-hidden">Дополнительная навигация по товару</h3>
+                <ul class="goods__navigation-list">
+                  <li class="goods__navigation-item">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use href="img/sprite.svg#good-heart"></use>
+                    </svg>
+                    <button class="goods__navigation-button" type="button" aria-label="Сохранить данное предложение в избранных">Сохранить</button>
+                  </li>
+                  <li class="goods__navigation-item">
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use href="img/sprite.svg#good-compare"></use>
+                    </svg><a class="goods__navigation-button goods__navigation-button--link" href="compare" title="Сравнить данное предложение с другими предложениями">Сравнить</a>
+                  </li>
+                  <li class="goods__navigation-item">
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use href="img/sprite.svg#good-share"></use>
+                    </svg>
+                    <button class="goods__navigation-button" type="button" aria-label="Поделиться данным предложением">Поделиться</button>
+                  </li>
+                </ul>
+              </section>
             </div>
           </li>
         </ul>
+      </section>
+      <section class="articles">
+        <h2 class="articles__title">Статьи</h2><a class="articles__link" href="#articles" title="Перейти на страницу со статьями">Читать все
+          <svg width="27" height="12" aria-hidden="true">
+            <use href="img/sprite.svg#article-arrow"></use>
+          </svg></a>
       </section>
     </main>
     <script src="js/main.js"></script>

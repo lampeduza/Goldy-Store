@@ -1,0 +1,8 @@
+mixin buttons(good)
+	ul.goods__buttons.buttons
+		each button in good.buttons
+			li.buttons__element
+				if button.type
+					button.buttons__button(type= button.type aria-label= button.description)= button.text
+				else
+					a.buttons__button.buttons__button--link(href=`#${button.href}.html` title= button.description)= button.text

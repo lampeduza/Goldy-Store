@@ -7,10 +7,13 @@ mixin goods(goods = [])
 						+picture(`${image.path}`, `jpg`, `${image.width}`, `${image.height}`, `${image.description}`, `${image.description}`)
 					+image-controls(good)
 				.goods__content
-					+rating(good)
-					h3.goods__title= good.title
-					span.goods__code= `Артикул: ${good.code}`
-					span.goods__current-price= good.currentPrice
-					del.goods__old-price= good.oldPrice
+					header.goods__header
+						+rating(good)
+						h3.goods__title= good.title
+						span.goods__code= `Артикул: ${good.code}`
+						span.goods__current-price= good.currentPrice
+						del.goods__old-price= good.oldPrice
 					+colors(good)
 					+sizes(good)
+					+buttons(good)
+					+good-navigation(good)

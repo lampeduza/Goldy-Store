@@ -1,8 +1,13 @@
 mixin sizes(good)
 	section.sizes
 		h3.sizes__title Размеры
-
-		//- Тут будет tooltip
+		//- Можно вынести в отдельный миксин
+		.sizes__tooltip
+			span.sizes__tooltip-symbol ?
+			p.sizes__tooltip-text
+				.
+					Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.
+					
 		ul.sizes__list
 			each size in good.sizes
 				li.sizes__item

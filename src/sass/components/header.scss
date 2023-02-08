@@ -1,0 +1,13 @@
+.header__number {
+	line-height: 14px;
+	color: inherit;
+
+	display: flex;
+	align-items: center;
+	width: max-content;
+	text-decoration: none;
+
+	svg {
+		margin-right: 10px;
+	}
+}

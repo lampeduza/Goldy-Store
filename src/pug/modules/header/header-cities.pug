@@ -3,11 +3,18 @@ include header-cities-data
 section.header__cities.cities
 	h2.visually-hidden Список городов
 	.cities__container
-		p.cities__value
+		button.cities__value(type="button")
 			+icon('location', '12', '16')
 			span.cities__city Санкт-Петербург
-			+icon('arrow-up', '12', '16')
+			+icon('arrow-down', '9', '6')
 		ul.cities__list
 			each city in cities
+				//- if city.current
+				//- 	li.cities__item
+				//- 		a.cities__link.cities__link--current(href="#")= city.city
+				//- 		+icon('tick', '16', '16')
+				//- else
+				//- 	li.cities__item
+				//- 		a.cities__link(href="#")= city.city
 				li.cities__item
-					a.cities__link(href="#")= city
+					a.cities__link(class= city.current ? 'cities__link--current' : '' href="#")= city.city

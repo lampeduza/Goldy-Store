@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-left" viewBox="0 0 10 16"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-down" viewBox="0 0 9 6"><g fill="none">
+<path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+</g></symbol><symbol id="arrow-left" viewBox="0 0 10 16"><g fill="none">
 <path opacity="0.2" d="M9.07107 0.999977L2 8.07104L9.07107 15.1421" stroke="#303030" stroke-width="2"/>
 </g></symbol><symbol id="arrow-right" viewBox="0 0 10 16"><g fill="none">
 <path d="M1.07102 0.999977L8.14209 8.07104L1.07102 15.1421" stroke="#303030" stroke-width="2"/>
@@ -8,10 +10,10 @@
 <path d="M26.5303 6.53033C26.8232 6.23744 26.8232 5.76257 26.5303 5.46967L21.7574 0.696701C21.4645 0.403808 20.9896 0.403808 20.6967 0.696701C20.4038 0.989594 20.4038 1.46447 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM-6.55671e-08 6.75L26 6.75L26 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="black"/>
 </g></symbol><symbol id="bag" viewBox="0 0 20 20"><g fill="none">
 <rect x="2" y="5" width="16" height="13" rx="1" fill="white"/>
-<mask id="path-2-inside-1_901_17" fill="white">
+<mask id="path-2-inside-1_939_17" fill="white">
 <rect x="2" y="5" width="16" height="13" rx="1"/>
 </mask>
-<rect x="2" y="5" width="16" height="13" rx="1" stroke="#303030" stroke-width="3.2" mask="url(#path-2-inside-1_901_17)"/>
+<rect x="2" y="5" width="16" height="13" rx="1" stroke="#303030" stroke-width="3.2" mask="url(#path-2-inside-1_939_17)"/>
 <path d="M6 9L6 6C6 3.79086 7.79086 2 10 2V2C12.2091 2 14 3.79086 14 6L14 9" stroke="#303030" stroke-width="1.6"/>
 </g></symbol><symbol id="chart" viewBox="0 0 20 20"><g fill="none">
 <line x1="5.1" y1="10" x2="5.1" y2="17" stroke="#303030" stroke-width="2.2"/>
@@ -53,4 +55,6 @@
 <path d="M18.6464 27.3536C18.4512 27.1583 18.4512 26.8417 18.6464 26.6464L21.8284 23.4645C22.0237 23.2692 22.3403 23.2692 22.5355 23.4645C22.7308 23.6597 22.7308 23.9763 22.5355 24.1716L19.7071 27L22.5355 29.8284C22.7308 30.0237 22.7308 30.3403 22.5355 30.5355C22.3403 30.7308 22.0237 30.7308 21.8284 30.5355L18.6464 27.3536ZM35 27.5L19 27.5L19 26.5L35 26.5L35 27.5Z" fill="black"/>
 </g></symbol><symbol id="search" viewBox="0 0 20 20"><g fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2 8.5C13.2 11.0957 11.0957 13.2 8.5 13.2C5.90426 13.2 3.8 11.0957 3.8 8.5C3.8 5.90426 5.90426 3.8 8.5 3.8C11.0957 3.8 13.2 5.90426 13.2 8.5ZM12.062 13.938C11.039 14.6094 9.81512 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5C15 10.1561 14.3806 11.6676 13.3609 12.8153L17.2728 16.7272L16 18L12 14L12.062 13.938Z" fill="#303030"/>
+</g></symbol><symbol id="tick" viewBox="0 0 16 16"><g fill="none">
+<path d="M6.29998 11.9L2.56665 8.16667L3.28332 7.45L6.29998 10.4667L12.7 4.06667L13.4167 4.78333L6.29998 11.9Z" fill="black"/>
 </g></symbol></svg>

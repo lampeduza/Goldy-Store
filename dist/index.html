@@ -10,6 +10,7 @@
     <link rel="preload" href="fonts/inter/regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter/medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter/semi-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter/bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/prata/regular.woff2" as="font" type="font/woff2" crossorigin>
     <title>Goldy Store | Ювелирный магазин</title>
   </head>
@@ -18,16 +19,16 @@
       <section class="header__cities cities">
         <h2 class="visually-hidden">Список городов</h2>
         <div class="cities__container">
-          <p class="cities__value">
+          <button class="cities__value" type="button">
             <svg width="12" height="16" aria-hidden="true">
               <use href="img/sprite.svg#location"></use>
             </svg><span class="cities__city">Санкт-Петербург</span>
-            <svg width="12" height="16" aria-hidden="true">
-              <use href="img/sprite.svg#arrow-up"></use>
+            <svg width="9" height="6" aria-hidden="true">
+              <use href="img/sprite.svg#arrow-down"></use>
             </svg>
-          </p>
+          </button>
           <ul class="cities__list">
-            <li class="cities__item"><a class="cities__link" href="#">Санкт-Петербург</a></li>
+            <li class="cities__item"><a class="cities__link cities__link--current" href="#">Санкт-Петербург</a></li>
             <li class="cities__item"><a class="cities__link" href="#">Москва</a></li>
             <li class="cities__item"><a class="cities__link" href="#">Нижний Новгород</a></li>
             <li class="cities__item"><a class="cities__link" href="#">Ростов-на-Дону</a></li>
@@ -42,7 +43,7 @@
         </svg></a>
       <section class="header__user-panel user-panel">
         <h2 class="visually-hidden">Панель входа и регистрации</h2>
-        <p class="user-panel__data"><a class="user-panel__link" href="#log-in">Вход</a>|<a class="user-panel__link" href="#sign-up">Регистрация</a></p>
+        <p class="user-panel__data"><a class="user-panel__link" href="#log-in">Вход</a>&nbsp;|&nbsp;<a class="user-panel__link" href="#sign-up">Регистрация</a></p>
       </section>
       <section class="header__additional-panel additional-panel">
         <h2 class="visually-hidden">Дополнительная панель пользователя</h2>

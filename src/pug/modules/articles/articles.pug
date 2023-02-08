@@ -1,6 +1,14 @@
+include articles-data
+
 section.articles
 	h2.articles__title Статьи
-	a.articles__link(href="#articles" title="Перейти на страницу со статьями")
+	a.articles__read(href="#articles" title="Перейти на страницу со статьями")
 		.
 			Читать все
 		+icon('article-arrow', '27', '12')
+	ul.articles__list
+		each article in articles
+			li.articles__element
+				a.articles__link(href=`#${article.path}.html` title= article.heading)
+					+picture(`${article.path}`, `jpg`, `${article.width}`, `${article.height}`, `${article.heading}`, `${article.heading}`)
+					date(datetime= article.datetime)= article.date

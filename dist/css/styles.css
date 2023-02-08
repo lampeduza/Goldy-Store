@@ -229,9 +229,10 @@ picture {
 .navigation {
   width: 100%;
   display: grid;
-  grid-template-columns: auto 303px;
-  gap: 20px;
+  grid-template-columns: 1fr 303px;
+  gap: 10px;
   background-color: #F8F8F8;
+  margin-top: 23px;
 }
 
 .navigation__list {
@@ -243,9 +244,8 @@ picture {
   -webkit-box-align: center;
           align-items: center;
   padding: 25px 0 25px 50px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
+  max-width: 987px;
 }
 
 .navigation__item {

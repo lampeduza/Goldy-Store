@@ -5,9 +5,10 @@ $navigation-background: #F8F8F8;
 .navigation {
 	width: 100%;
 	display: grid;
-	grid-template-columns: auto 303px;
-	gap: 20px;
+	grid-template-columns: 1fr 303px;
+	gap: 10px;
 	background-color: $navigation-background;
+	margin-top: 23px;
 }
 
 .navigation__list {
@@ -15,7 +16,8 @@ $navigation-background: #F8F8F8;
 	display: flex;
 	align-items: center;
 	padding: 25px 0 25px 50px;
-	width: max-content;
+	width: 100%;
+	max-width: 987px;
 }
 
 .navigation__item {

@@ -1,0 +1,51 @@
+@use './global/library.scss' as lib;
+
+$item-background: #F8F8F8;
+
+.popular {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.popular__title {
+	font-family: lib.$secondary-font;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+.popular__list {
+	@include lib.reset-list;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+}
+
+.popular__item {
+	background-color: $item-background;
+}
+
+.popular__link {
+	min-height: 259px;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 1fr auto;
+	gap: 15px;
+	padding: 17px 26px;
+	color: inherit;
+	text-decoration: none;
+
+	picture {
+		align-self: center;
+		justify-self: center;
+	}
+}
+
+.popular__heading {
+	align-self: baseline;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+}

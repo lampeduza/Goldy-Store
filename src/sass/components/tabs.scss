@@ -1,0 +1,23 @@
+@use './global/library.scss' as lib;
+
+.tabs__list {
+	@include lib.reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
+}
+
+.tabs__item {
+	margin-bottom: 8px;
+	margin-right: 8px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	@include lib.tab-current;
+}
+
+.tabs__button {
+	@include lib.tab;
+}

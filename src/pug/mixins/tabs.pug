@@ -1,5 +1,5 @@
 mixin tabs(tabs = [])
-	section.tabs
+	section.tabs&attributes(attributes)
 		h2.visually-hidden Выберете категорию
 		ul.tabs__list
 			each tab in tabs

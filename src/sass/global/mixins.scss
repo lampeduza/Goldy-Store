@@ -19,6 +19,14 @@
   overflow: hidden;
 }
 
+@mixin title {
+  font-family: var.$secondary-font;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
 /* BUTTON */
 @mixin button {
   display: inline-block;
@@ -59,7 +67,7 @@
 @mixin white-button {
   $color-black: #303030;
   $color-white: #ffffff;
-  $background-white: #ffffff;
+  $background-white: $color-white;
   $background-hover: $color-black;
   $background-pressed: #000000;
   $border-normal: 1px solid #303030;
@@ -82,3 +90,74 @@
     color: $color-white;
   }
 }
+
+@mixin tab {
+  $tab-background: #f0f0f0;
+  $tab-color: #303030;
+  $tab-hover-background: #DDDDDD;
+  $tab-pressed-background: $tab-color;
+  $tab-pressed-color: #ffffff;
+
+  font-family: var.$primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $tab-color;
+  background-color: $tab-background;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $tab-hover-background;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $tab-pressed-background;
+    color: $tab-pressed-color;
+  }
+}
+
+
+@mixin tab-current {
+  $tab-current-background: #303030;
+  $tab-current-color: #ffffff;
+
+  &--current {
+    .tabs__button {
+      color: $tab-current-color;
+      background-color: $tab-current-background;
+    }
+  }
+}
+
+@mixin sale {
+  $background: #5B8A8F;
+  $color: #ffffff;
+
+  content: 'Sale';
+  color: $color;
+  background: $background;
+  font-family: var.$primary-font;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 4px 12px;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+

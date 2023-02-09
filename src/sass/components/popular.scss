@@ -8,11 +8,7 @@ $item-background: #F8F8F8;
 }
 
 .popular__title {
-	font-family: lib.$secondary-font;
-	font-size: 40px;
-	line-height: 40px;
-	font-weight: 400;
-	margin-bottom: 40px;
+	@include lib.title;
 }
 
 .popular__list {
@@ -39,6 +35,13 @@ $item-background: #F8F8F8;
 	picture {
 		align-self: center;
 		justify-self: center;
+	}
+
+	&:hover {
+		img {
+			animation-duration: 0.5s;
+			transform: scale(1.1);
+		}
 	}
 }
 

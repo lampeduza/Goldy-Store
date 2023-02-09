@@ -4,31 +4,28 @@ include sale-data
 
 section.sale
 	h2.sale__title Распродажа
-	+tabs(tabs)
-	+controls(controls)
+	+tabs(tabs)(class="sale__tabs")
+	+controls(controls)(class="sale__controls")
 	ul.sale__list.cards
 		each card in cards
 			if card.sale
 				li.cards__item
-					article.cards__card.card
+					article.cards__card.card.card--sale
 						h3.visually-hidden Кольцо из белого золота с бриллиантами
-						span.card__sale= card.saleText
 						+card-buttons(buttons)
 						+card-images-list(card)
-						+dots(dots)(class="card__dots")
 						.card__content
 							span.card__current-price= card.actualPrice
 							del.card__old-price= card.oldPrice
 							span.card__discount= card.discount
-							p.card__text= card.text
+							p.card__text !{card.text}
 			else
 				li.cards__item
 					article.cards__card.card
 						h3.visually-hidden Кольцо из белого золота с бриллиантами
 						+card-buttons(buttons)
 						+card-images-list(card)
-						+dots(dots)(class="card__dots")
 						.card__content
 							span.card__current-price= card.actualPrice
-							p.card__text= card.text
+							p.card__text !{card.text}
 	include sale-secondary

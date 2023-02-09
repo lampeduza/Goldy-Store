@@ -18,3 +18,67 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* BUTTON */
+@mixin button {
+  display: inline-block;
+  font-family: var.$primary-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 20px;
+  min-width: 250px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* BLACK BUTTON */
+@mixin black-button {
+  $color-white: #ffffff;
+  $background-black: #000000;
+  $background-hover: #505050;
+  $background-pressed: #000000;
+
+  @include button;
+  color: $color-white;
+  background-color: $background-black;
+
+  &:hover {
+    background-color: $background-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $background-pressed;
+  }
+}
+
+/* WHITE BUTTON */
+@mixin white-button {
+  $color-black: #303030;
+  $color-white: #ffffff;
+  $background-white: #ffffff;
+  $background-hover: $color-black;
+  $background-pressed: #000000;
+  $border-normal: 1px solid #303030;
+  $border-pressed: 1px solid #000000;
+
+  @include button;
+  color: $color-black;
+  background-color: $background-white;
+  border: $border-normal;
+
+  &:hover {
+    background-color: $background-hover;
+    color: $color-white;
+    border: $border-pressed;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $background-pressed;
+    color: $color-white;
+  }
+}

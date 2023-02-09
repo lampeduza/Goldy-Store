@@ -1,0 +1,39 @@
+@use './global/library.scss' as lib;
+
+$dot-background: #ffffff;
+$dot-border: 1px solid #303030;
+$dot-current-background: #303030;
+
+.dots {
+	@include lib.reset-list;
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-bottom: -8px;
+	max-width: 136px;
+}
+
+.dots__dot {
+	margin-bottom: 8px;
+	margin-right: 8px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&--current {
+		.dots__button {
+			background-color: $dot-current-background;
+		}
+	}
+}
+
+.dots__button {
+	margin: 0;
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: $dot-background;
+	border: $dot-border;
+	border-radius: 50%;
+	cursor: pointer;
+}

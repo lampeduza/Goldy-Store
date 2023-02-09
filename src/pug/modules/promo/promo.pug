@@ -3,18 +3,18 @@ include promo-dots-data
 include ../controls-data
 
 section.promo
-	.promo__wrapper
+	.promo__wrapper.slider
 		h2.visually-hidden Горячие предложения
-		ul.promo__slider.slider
+		ul.slider__list
 			each slide in slides
 				//- Слайд можно вынести в отдельный mixin или сделать шаблон слайда
-				li.slider__slide.slide
+				li.slider__slide.slide(class= slide.current ? 'slide--current' : '')
 					+icon('diamond-background', '833', '643')
 					.slide__content
 						p.slide__text= slide.text
 						h3.slide__title= slide.title
 						a.slide__link(href=`#${slide.linkAnchor}.html` title= slide.linkInfo)= slide.linkText
 					+picture(`${slide.imagePath}`, 'png', `${slide.imageWidth}`, `${slide.imageHeight}`, `${slide.imageDescription}`, `${slide.imageDescription}`)
-		+controls(controls)
+		+controls(controls)(class="slider__controls")
 		//- Также можно вынести дополнительные контролы для слайдера в mixin
-		+dots(dots)
+		+dots(dots)(class="slider__dots")

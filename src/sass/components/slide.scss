@@ -1,0 +1,51 @@
+@use './global/library.scss' as lib;
+
+$slide-background: #F8F8F8;
+
+.slide {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	min-height: 560px;
+	background-color: $slide-background;
+	padding-left: 126px;
+	width: 100%;
+	flex-shrink: 0;
+	display: none;
+
+	svg {
+		position: absolute;
+
+		display: none;
+	}
+
+	picture {
+		justify-self: end;
+		margin-right: 36px;
+	}
+
+	&--current {
+		display: grid;
+	}
+}
+
+.slide__text {
+	font-family: lib.$secondary-font;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+.slide__title {
+	font-family: lib.$secondary-font;
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 54px;
+}
+
+.slide__link {
+	@include lib.black-button;
+}

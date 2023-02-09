@@ -1,6 +1,6 @@
 mixin controls(controls = [])
-	ul.controls
+	ul.controls&attributes(attributes)
 		each control in controls
-			li.controls__control
+			li.controls__control(class= control.iconName === 'previous' ? 'controls__control--previous' : 'controls__control--next')
 				button.control__button(type="button" aria-label= control.description)
 					+icon(`${control.iconName}`, `${control.iconWidth}`, `${control.iconHeight}`)

@@ -2,6 +2,7 @@
 
 .sale {
 	position: relative;
+	margin-bottom: 120px;
 }
 
 .sale__title {
@@ -20,3 +21,105 @@
 	top: 10px;
 	right: 0;
 }
+
+.sale__secondary-list {
+	@include lib.reset-list;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.sale__secondary-link {
+	min-height: 290px;
+	color: inherit;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2, auto);
+	padding: 72px 172px 45px 0;
+	background-color: #F8F8F8;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 25px;
+		left: 0;
+		background-repeat: no-repeat;
+		background-position: 25px 100%;
+		width: 310px;
+		height: 265px;
+		background-image: url('../img/background/diamond-cut.png');
+		z-index: -1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+	}
+
+	&--green {
+		.sale__secondary-discount {
+			@include lib.green-discount;
+		}
+
+		&::after {
+			width: 124px;
+			height: 283px;
+			background-image: url('../img/background/background-1.png');
+			filter: drop-shadow(-15px 4px 16px rgba(0, 0, 0, 0.1));
+		}
+	}
+
+	&--red {
+		.sale__secondary-discount {
+			@include lib.red-discount;
+		}
+
+		&::after {
+			width: 229px;
+			height: 290px;
+			background-image: url('../img/background/background-2.png');
+		}
+	}
+
+	&--orange {
+		.sale__secondary-discount {
+			@include lib.orange-discount;
+		}
+
+		&::after {
+			top: 41px;
+			width: 220px;
+			height: 249px;
+			background-image: url('../img/background/background-3.png');
+		}
+	}
+}
+
+.sale__secondary-title {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 26px;
+	margin-bottom: 19px;
+}
+
+.sale__secondary-discount {
+	display: flex;
+	align-items: center;
+	width: max-content;
+}
+
+.sale__secondary-amount {
+	font-size: 36px;
+	line-height: 57.6px;
+	margin-left: 13px;
+}
+

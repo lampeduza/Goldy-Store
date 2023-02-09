@@ -164,8 +164,37 @@
   border-radius: 15px;
 }
 
+@mixin basic-discount {
+  $color: #ffffff;
 
+  color: $color;
+  font-family: var.$primary-font;
+  font-size: 24px;
+  line-height: 38.4px;
+  font-weight: 600;
+  padding: 0 25px;
+}
 
+@mixin green-discount {
+  $background: #43807F;
+
+  background-color: $background;
+  @include basic-discount;
+}
+
+@mixin red-discount {
+  $background: #E24B33;
+
+  background-color: $background;
+  @include basic-discount;
+}
+
+@mixin orange-discount {
+  $background: #E1A661;
+
+  background-color: $background;
+  @include basic-discount;
+}
 
 
 

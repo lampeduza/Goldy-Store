@@ -37,9 +37,12 @@ $item-background: #F8F8F8;
 		justify-self: center;
 	}
 
+	img {
+		transition: all 0.2s;
+	}
+
 	&:hover {
 		img {
-			animation-duration: 0.5s;
 			transform: scale(1.1);
 		}
 	}

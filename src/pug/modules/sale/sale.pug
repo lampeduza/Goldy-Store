@@ -10,7 +10,7 @@ section.sale
 		each card in cards
 			if card.sale
 				li.cards__item
-					article.cards__card.card.card--sale
+					article.cards__card.card.card--sale(tabindex="0")
 						h3.visually-hidden Кольцо из белого золота с бриллиантами
 						+card-buttons(buttons)
 						+card-images-list(card)
@@ -21,7 +21,7 @@ section.sale
 							p.card__text !{card.text}
 			else
 				li.cards__item
-					article.cards__card.card
+					article.cards__card.card(tabindex="0")
 						h3.visually-hidden Кольцо из белого золота с бриллиантами
 						+card-buttons(buttons)
 						+card-images-list(card)

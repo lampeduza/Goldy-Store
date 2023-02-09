@@ -564,9 +564,12 @@ picture {
   align-self: center;
   justify-self: center;
 }
+.popular__link img {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
 .popular__link:hover img {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -697,12 +700,34 @@ picture {
 
 .card__content {
   grid-column: 1/-1;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .card__current-price {
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
+  margin-right: 8px;
+}
+
+.card__old-price {
+  color: #8F8F8F;
+  line-height: 14px;
+}
+
+.card__discount {
+  color: #ffffff;
+  background-color: #E24B33;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 15px;
+  margin-left: auto;
 }
 
 .card__text {
@@ -710,6 +735,7 @@ picture {
   line-height: 22.4px;
   font-weight: 400;
   margin-top: 16px;
+  width: 100%;
 }
 
 .controls {

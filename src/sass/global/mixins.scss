@@ -151,9 +151,18 @@
   left: 24px;
 }
 
+@mixin discount {
+  $background: #E24B33;
+  $color: #ffffff;
 
-
-
+  color: $color;
+  background-color: $background;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 15px;
+}
 
 
 

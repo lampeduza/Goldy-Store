@@ -79,12 +79,27 @@ $card-border: 1px solid #F0F0F0;
 
 .card__content {
 	grid-column: 1 / -1;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .card__current-price {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 600;
+	margin-right: 8px;
+}
+
+.card__old-price {
+	color: #8F8F8F;
+	line-height: 14px;
+}
+
+.card__discount {
+	@include lib.discount;
+	margin-left: auto;
 }
 
 .card__text {
@@ -92,4 +107,5 @@ $card-border: 1px solid #F0F0F0;
 	line-height: 22.4px;
 	font-weight: 400;
 	margin-top: 16px;
+	width: 100%;
 }

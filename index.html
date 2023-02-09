@@ -200,7 +200,7 @@
         </section>
         <section class="sale">
           <h2 class="sale__title">Распродажа</h2>
-          <section class="tabs">
+          <section class="tabs sale__tabs">
             <h2 class="visually-hidden">Выберете категорию</h2>
             <ul class="tabs__list">
               <li class="tabs__item tabs__item--current">
@@ -217,7 +217,7 @@
               </li>
             </ul>
           </section>
-          <ul class="controls">
+          <ul class="controls sale__controls">
             <li class="controls__control controls__control--previous">
               <button class="control__button" type="button" aria-label="Предыдущий слайд">
                 <svg width="54" height="54" aria-hidden="true">
@@ -235,8 +235,8 @@
           </ul>
           <ul class="sale__list cards">
             <li class="cards__item">
-              <article class="cards__card card">
-                <h3 class="visually-hidden">Кольцо из белого золота с бриллиантами</h3><span class="card__sale">Sale</span>
+              <article class="cards__card card card--sale" tabindex="0">
+                <h3 class="visually-hidden">Кольцо из белого золота с бриллиантами</h3>
                 <ul class="card__buttons">
                   <li class="card__element">
                     <button class="card__button" type="button" aria-label="Добавить в избранное">
@@ -254,41 +254,69 @@
                   </li>
                 </ul>
                 <ul class="card__images">
-                  <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-1.webp, img/ring-1@2x.webp 2x"/><img src="img/ring-1.jpg" srcset="img/ring-1@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                  <li class="card__image card__image--current">
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-1.webp, img/ring-1@2x.webp 2x"/><img src="img/ring-1.jpg" srcset="img/ring-1@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-1.webp, img/ring-1@2x.webp 2x"/><img src="img/ring-1.jpg" srcset="img/ring-1@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-1.webp, img/ring-1@2x.webp 2x"/><img src="img/ring-1.jpg" srcset="img/ring-1@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-1.webp, img/ring-1@2x.webp 2x"/><img src="img/ring-1.jpg" srcset="img/ring-1@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
-                  </li>
-                </ul>
-                <ul class="dots card__dots">
-                  <li class="dots__dot dots__dot--current">
-                    <button class="dots__button" type="button" aria-label="Слайд №1"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №2"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-1.webp, img/ring-1@2x.webp 2x"/><img src="img/ring-1.jpg" srcset="img/ring-1@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
                 <div class="card__content"><span class="card__current-price">41 000 ₽</span>
                   <del class="card__old-price">65 000 ₽</del><span class="card__discount">-45%</span>
-                  <p class="card__text">Стильное кольцо из белого золота c бриллиантами</p>
+                  <p class="card__text">Стильное кольцо из белого золота c&nbsp;бриллиантами</p>
                 </div>
               </article>
             </li>
             <li class="cards__item">
-              <article class="cards__card card">
+              <article class="cards__card card" tabindex="0">
                 <h3 class="visually-hidden">Кольцо из белого золота с бриллиантами</h3>
                 <ul class="card__buttons">
                   <li class="card__element">
@@ -307,40 +335,68 @@
                   </li>
                 </ul>
                 <ul class="card__images">
-                  <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-2.webp, img/ring-2@2x.webp 2x"/><img src="img/ring-2.jpg" srcset="img/ring-2@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                  <li class="card__image card__image--current">
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-2.webp, img/ring-2@2x.webp 2x"/><img src="img/ring-2.jpg" srcset="img/ring-2@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-2.webp, img/ring-2@2x.webp 2x"/><img src="img/ring-2.jpg" srcset="img/ring-2@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-2.webp, img/ring-2@2x.webp 2x"/><img src="img/ring-2.jpg" srcset="img/ring-2@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-2.webp, img/ring-2@2x.webp 2x"/><img src="img/ring-2.jpg" srcset="img/ring-2@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
-                  </li>
-                </ul>
-                <ul class="dots card__dots">
-                  <li class="dots__dot dots__dot--current">
-                    <button class="dots__button" type="button" aria-label="Слайд №1"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №2"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-2.webp, img/ring-2@2x.webp 2x"/><img src="img/ring-2.jpg" srcset="img/ring-2@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
                 <div class="card__content"><span class="card__current-price">56 000 ₽</span>
-                  <p class="card__text">Стильное кольцо из белого золота c бриллиантами</p>
+                  <p class="card__text">Стильное кольцо из белого золота c&nbsp;бриллиантами</p>
                 </div>
               </article>
             </li>
             <li class="cards__item">
-              <article class="cards__card card">
+              <article class="cards__card card" tabindex="0">
                 <h3 class="visually-hidden">Кольцо из белого золота с бриллиантами</h3>
                 <ul class="card__buttons">
                   <li class="card__element">
@@ -359,40 +415,68 @@
                   </li>
                 </ul>
                 <ul class="card__images">
-                  <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-3.webp, img/ring-3@2x.webp 2x"/><img src="img/ring-3.jpg" srcset="img/ring-3@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                  <li class="card__image card__image--current">
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-3.webp, img/ring-3@2x.webp 2x"/><img src="img/ring-3.jpg" srcset="img/ring-3@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-3.webp, img/ring-3@2x.webp 2x"/><img src="img/ring-3.jpg" srcset="img/ring-3@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-3.webp, img/ring-3@2x.webp 2x"/><img src="img/ring-3.jpg" srcset="img/ring-3@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-3.webp, img/ring-3@2x.webp 2x"/><img src="img/ring-3.jpg" srcset="img/ring-3@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
-                  </li>
-                </ul>
-                <ul class="dots card__dots">
-                  <li class="dots__dot dots__dot--current">
-                    <button class="dots__button" type="button" aria-label="Слайд №1"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №2"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-3.webp, img/ring-3@2x.webp 2x"/><img src="img/ring-3.jpg" srcset="img/ring-3@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
                 <div class="card__content"><span class="card__current-price">37 500 ₽</span>
-                  <p class="card__text">Стильное кольцо из белого золота c бриллиантами</p>
+                  <p class="card__text">Стильное кольцо из белого золота c&nbsp;бриллиантами</p>
                 </div>
               </article>
             </li>
             <li class="cards__item">
-              <article class="cards__card card">
+              <article class="cards__card card" tabindex="0">
                 <h3 class="visually-hidden">Кольцо из белого золота с бриллиантами</h3>
                 <ul class="card__buttons">
                   <li class="card__element">
@@ -411,35 +495,63 @@
                   </li>
                 </ul>
                 <ul class="card__images">
-                  <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-4.webp, img/ring-4@2x.webp 2x"/><img src="img/ring-4.jpg" srcset="img/ring-4@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                  <li class="card__image card__image--current">
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-4.webp, img/ring-4@2x.webp 2x"/><img src="img/ring-4.jpg" srcset="img/ring-4@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-4.webp, img/ring-4@2x.webp 2x"/><img src="img/ring-4.jpg" srcset="img/ring-4@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-4.webp, img/ring-4@2x.webp 2x"/><img src="img/ring-4.jpg" srcset="img/ring-4@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="card__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/ring-4.webp, img/ring-4@2x.webp 2x"/><img src="img/ring-4.jpg" srcset="img/ring-4@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
-                    </picture>
-                  </li>
-                </ul>
-                <ul class="dots card__dots">
-                  <li class="dots__dot dots__dot--current">
-                    <button class="dots__button" type="button" aria-label="Слайд №1"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №2"></button>
-                  </li>
-                  <li class="dots__dot">
-                    <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                    <div class="card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/ring-4.webp, img/ring-4@2x.webp 2x"/><img src="img/ring-4.jpg" srcset="img/ring-4@2x.jpg 2x" width="200" height="200" alt="Стильное кольцо из белого золота c бриллиантами" title="Стильное кольцо из белого золота c бриллиантами"/>
+                      </picture>
+                      <ul class="dots card__dots">
+                        <li class="dots__dot dots__dot--current">
+                          <button class="dots__button" type="button" aria-label="Слайд №1"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №2"></button>
+                        </li>
+                        <li class="dots__dot">
+                          <button class="dots__button" type="button" aria-label="Слайд №3"></button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
                 <div class="card__content"><span class="card__current-price">39 200 ₽</span>
-                  <p class="card__text">Стильное кольцо из белого золота c бриллиантами</p>
+                  <p class="card__text">Стильное кольцо из белого золота c&nbsp;бриллиантами</p>
                 </div>
               </article>
             </li>

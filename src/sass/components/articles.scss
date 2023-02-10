@@ -1,0 +1,56 @@
+@use './global/library.scss' as lib;
+
+.articles {
+	margin-bottom: 80px;
+	position: relative;
+}
+
+.articles__title {
+	@include lib.title;
+}
+
+.articles__list {
+	@include lib.reset-list;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.articles__read {
+	line-height: 14px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	width: max-content;
+	color: inherit;
+	text-transform: uppercase;
+	position: absolute;
+	top: 26px;
+	right: 0;
+
+	svg {
+		margin-left: 12px;
+	}
+}
+
+.articles__link {
+	text-decoration: none;
+	color: inherit;
+
+	picture {
+		margin-bottom: 20px;
+	}
+}
+
+.articles__date {
+	display: block;
+	color: #8F8F8F;
+	line-height: 14px;
+	margin-bottom: 12px;
+}
+
+.articles__heading {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}

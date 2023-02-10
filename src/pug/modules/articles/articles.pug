@@ -11,4 +11,5 @@ section.articles
 			li.articles__element
 				a.articles__link(href=`#${article.path}.html` title= article.heading)
 					+picture(`${article.path}`, `jpg`, `${article.width}`, `${article.height}`, `${article.heading}`, `${article.heading}`)
-					date(datetime= article.datetime)= article.date
+					date.articles__date(datetime= article.datetime)= article.date
+					h3.articles__heading= article.heading

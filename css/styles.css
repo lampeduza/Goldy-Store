@@ -212,6 +212,10 @@ picture {
 }
 .header__number svg {
   margin-right: 10px;
+  fill: #303030;
+}
+.header__number:hover svg {
+  opacity: 0.5;
 }
 
 .header__logo {
@@ -266,8 +270,12 @@ picture {
   color: inherit;
   text-transform: uppercase;
 }
+.navigation__link:hover {
+  opacity: 0.5;
+}
 .navigation__link--current {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .search__form {
@@ -333,7 +341,38 @@ picture {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
+  outline: none;
   position: relative;
+}
+.additional-panel__link svg {
+  fill: #303030;
+}
+.additional-panel__link .additional-panel__icon {
+  stroke: #303030;
+}
+.additional-panel__link:hover svg {
+  fill: #979797;
+}
+.additional-panel__link:hover .additional-panel__icon {
+  stroke: #979797;
+}
+.additional-panel__link:focus svg, .additional-panel__link:active svg {
+  fill: #E24B33;
+}
+.additional-panel__link:focus .additional-panel__icon, .additional-panel__link:active .additional-panel__icon {
+  stroke: #E24B33;
+}
+.additional-panel__link--bag svg {
+  fill: #ffffff;
+  stroke: #303030;
+}
+.additional-panel__link--bag:hover svg {
+  fill: #ffffff;
+  stroke: #979797;
+}
+.additional-panel__link--bag:focus svg, .additional-panel__link--bag:active svg {
+  fill: #ffffff;
+  stroke: #E24B33;
 }
 
 .additional-panel__counter {
@@ -365,6 +404,9 @@ picture {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.cities__value:hover .cities__location-icon {
+  opacity: 0.5;
 }
 
 .cities__city {
@@ -404,6 +446,9 @@ picture {
   line-height: 14px;
   text-decoration: none;
 }
+.cities__link--current {
+  pointer-events: none;
+}
 .cities__link--current::after {
   content: "";
   width: 16px;
@@ -412,6 +457,9 @@ picture {
   background-repeat: no-repeat;
   position: absolute;
   right: 28px;
+}
+.cities__link:hover {
+  background-color: #FAFAFA;
 }
 
 .user-panel__data {
@@ -425,6 +473,9 @@ picture {
   text-decoration: none;
   color: inherit;
   line-height: 14px;
+}
+.user-panel__link:hover {
+  opacity: 0.5;
 }
 
 .slider {
@@ -896,6 +947,10 @@ picture {
 }
 .articles__read svg {
   margin-left: 12px;
+  fill: #000000;
+}
+.articles__read:hover {
+  opacity: 0.5;
 }
 
 .articles__link {

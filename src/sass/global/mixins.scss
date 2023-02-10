@@ -27,6 +27,13 @@
   margin-bottom: 40px;
 }
 
+@mixin h3-title {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 /* BUTTON */
 @mixin button {
   display: inline-block;

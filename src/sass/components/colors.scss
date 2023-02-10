@@ -1,0 +1,11 @@
+@use './global/library.scss' as lib;
+
+.colors__title {
+	@include lib.h3-title;
+}
+
+.colors__list {
+	@include lib.reset-list;
+	display: flex;
+	flex-wrap: wrap;
+}

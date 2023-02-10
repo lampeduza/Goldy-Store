@@ -1110,6 +1110,38 @@ picture {
   line-height: 14px;
 }
 
+.colors__title {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.colors__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sizes__title {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sizes__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .controls {
   margin: 0;
   padding: 0;

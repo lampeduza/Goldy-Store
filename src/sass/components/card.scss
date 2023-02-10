@@ -71,13 +71,34 @@ $card-border: 1px solid #F0F0F0;
 .card__element {
 	&:first-child {
 		margin-bottom: 10px;
+
+		.card__button {
+			&:focus,
+			&:active {
+
+				svg {
+					fill: #E24B33;
+				}
+			}
+		}
 	}
 }
 
 .card__button {
+	display: flex;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+
+	svg {
+		fill: #C9C9C9;
+	}
+
+	&:hover {
+		svg {
+			fill: #979797;
+		}
+	}
 }
 
 .card__content {

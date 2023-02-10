@@ -1,6 +1,6 @@
 mixin image-controls(good)
 	ul.goods__image-controls
 		each control in good.controls
-			li.goods__image-control
+			li.goods__image-control(class= control.bool === 'previous' ? 'goods__image-control--previous' : 'goods__image-control--next')
 				button.goods__image-button(type= control.type aria-label= control.description)
 					+icon(`${control.name}`, `${control.width}`, `${control.height}`)

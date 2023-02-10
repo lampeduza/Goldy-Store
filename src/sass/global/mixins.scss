@@ -151,18 +151,34 @@
   left: 24px;
 }
 
-@mixin sale-inline {
-  $background: #5B8A8F;
+@mixin offer {
   $color: #ffffff;
 
   color: $color;
-  background: $background;
   font-family: var.$primary-font;
   font-size: 13px;
   line-height: 13px;
   font-weight: 500;
   border-radius: 15px;
   padding: 4px 12px;
+}
+
+@mixin offer-new {
+  $background: #495159;
+  
+  background: $background;
+}
+
+@mixin offer-hit {
+  $background: #E1A661;
+  
+  background: $background;
+}
+
+@mixin offer-sale {
+  $background: #5B8A8F;
+  
+  background: $background;
 }
 
 @mixin discount {

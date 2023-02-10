@@ -3,9 +3,9 @@ mixin goods(goods = [])
 		each good in goods
 			li.goods__item(class= good.current ? 'goods__item--current' : '')
 				.goods__visual
-					span.goods__offer.good__offer--new New
-					span.goods__offer.good__offer--new Хит
-					span.goods__offer.good__offer--new Sale
+					ul.goods__offers
+						each offer in good.offers
+							li.goods__offer(class= offer.isNew ? 'goods__offer--new' : offer.isHit ? 'goods__offer--hit' : offer.isSale ? 'goods__offer--sale' : '')= offer.text
 					each image in good.images
 						+picture(`${image.path}`, `jpg`, `${image.width}`, `${image.height}`, `${image.description}`, `${image.description}`)
 					+image-controls(good)

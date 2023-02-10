@@ -12,6 +12,67 @@
 	display: none;
 
 	&--current {
-		display: block;
+		display: grid;
+		grid-template-columns: 550px 1fr;
+		grid-template-rows: auto;
+		gap: 100px;
 	}
+}
+
+.goods__visual {
+	position: relative;
+}
+
+.goods__offers {
+	@include lib.reset-list;
+	display: flex;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+}
+
+.goods__offer {
+	@include lib.offer;
+	margin-right: 4px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&--new {
+		@include lib.offer-new;
+	}
+
+	&--hit {
+		@include lib.offer-hit;
+	}
+
+	&--sale {
+		@include lib.offer-sale;
+	}
+}
+
+.goods__image-controls {
+	@include lib.reset-list;
+	display: flex;		
+}
+
+.goods__image-control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&--previous {
+		left: 16px;
+	}
+
+	&--next {
+		right: 16px;
+	}
+}
+
+.goods__image-button {
+	display: flex;
+	border: none;
+	background-color: transparent;
 }

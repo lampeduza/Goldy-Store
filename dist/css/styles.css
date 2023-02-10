@@ -956,7 +956,76 @@ picture {
   display: none;
 }
 .goods__item--current {
-  display: block;
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  grid-template-rows: auto;
+  gap: 100px;
+}
+
+.goods__visual {
+  position: relative;
+}
+
+.goods__offers {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.goods__offer {
+  color: #ffffff;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 4px 12px;
+  margin-right: 4px;
+}
+.goods__offer:last-child {
+  margin-right: 0;
+}
+.goods__offer--new {
+  background: #495159;
+}
+.goods__offer--hit {
+  background: #E1A661;
+}
+.goods__offer--sale {
+  background: #5B8A8F;
+}
+
+.goods__image-controls {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+}
+
+.goods__image-control {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.goods__image-control--previous {
+  left: 16px;
+}
+.goods__image-control--next {
+  right: 16px;
+}
+
+.goods__image-button {
+  display: -webkit-box;
+  display: flex;
+  border: none;
+  background-color: transparent;
 }
 
 .controls {

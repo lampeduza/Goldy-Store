@@ -328,9 +328,8 @@ picture {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 20px);
+  grid-template-columns: repeat(3, 32px);
   grid-auto-rows: 20px;
-  gap: 14px 28px;
   width: 116px;
 }
 
@@ -343,6 +342,8 @@ picture {
           justify-content: center;
   outline: none;
   position: relative;
+  width: 32px;
+  height: 32px;
 }
 .additional-panel__link svg {
   fill: #303030;
@@ -362,23 +363,17 @@ picture {
 .additional-panel__link:focus .additional-panel__icon, .additional-panel__link:active .additional-panel__icon {
   stroke: #E24B33;
 }
-.additional-panel__link--bag svg {
-  fill: #ffffff;
-  stroke: #303030;
+.additional-panel__link--bag:hover {
+  background-color: #F8F8F8;
 }
-.additional-panel__link--bag:hover svg {
-  fill: #ffffff;
-  stroke: #979797;
-}
-.additional-panel__link--bag:focus svg, .additional-panel__link--bag:active svg {
-  fill: #ffffff;
-  stroke: #E24B33;
+.additional-panel__link--bag:focus, .additional-panel__link--bag:active {
+  background-color: #E8E7E7;
 }
 
 .additional-panel__counter {
   position: absolute;
-  top: -7px;
-  right: -14px;
+  top: -3px;
+  right: -6px;
   font-size: 10px;
   line-height: 10px;
   font-weight: 700;

@@ -1,7 +1,7 @@
 mixin colors(good)
-	section.colors
+	section.colors&attributes(attributes)
 		h3.colors__title Цвет
 		ul.colors__list
 			each color in good.colors
 				li.colors__item
-					button.colors__button(type="button" aria-label=`Изделие ${color.color} цвета`)
+					button.colors__button(class= (color.alternative === 'grey' ? 'colors__button--grey' : color.alternative === 'yellow' ? 'colors__button--yellow' : color.alternative === 'orange' ? 'colors__button--orange' : color.alternative === 'mint' ? 'colors__button--mint' : '') type="button" aria-label=`Изделие ${color.color} цвета`)

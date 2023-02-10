@@ -1585,6 +1585,9 @@ picture {
 .tabs__item:last-child {
   margin-right: 0;
 }
+.tabs__item--current {
+  pointer-events: none;
+}
 .tabs__item--current .tabs__button {
   color: #ffffff;
   background-color: #303030;

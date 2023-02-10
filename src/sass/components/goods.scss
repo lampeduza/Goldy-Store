@@ -1,0 +1,17 @@
+@use './global/library.scss' as lib;
+
+.goods {
+	@include lib.reset-list;
+	display: flex;
+	flex-wrap: no-wrap;
+}
+
+.goods__item {
+	width: 100%;
+	flex-shrink: 0;
+	display: none;
+
+	&--current {
+		display: block;
+	}
+}

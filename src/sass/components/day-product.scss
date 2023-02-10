@@ -1,3 +1,18 @@
+@use './global/library.scss' as lib;
+
 .day-product {
 	margin-bottom: 120px;
+	position: relative;
+}
+
+.day-product__title {
+	@include lib.title;
+}
+
+.day-product__controls {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 116px;
+	justify-content: space-between;
 }

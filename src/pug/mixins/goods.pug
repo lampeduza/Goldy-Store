@@ -1,8 +1,11 @@
 mixin goods(goods = [])
 	ul.day-product__goods.goods
 		each good in goods
-			li.goods__item
+			li.goods__item(class= good.current ? 'goods__item--current' : '')
 				.goods__visual
+					span.goods__offer.good__offer--new New
+					span.goods__offer.good__offer--new Хит
+					span.goods__offer.good__offer--new Sale
 					each image in good.images
 						+picture(`${image.path}`, `jpg`, `${image.width}`, `${image.height}`, `${image.description}`, `${image.description}`)
 					+image-controls(good)

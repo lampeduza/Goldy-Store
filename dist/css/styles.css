@@ -341,7 +341,38 @@ picture {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
+  outline: none;
   position: relative;
+}
+.additional-panel__link svg {
+  fill: #303030;
+}
+.additional-panel__link .additional-panel__icon {
+  stroke: #303030;
+}
+.additional-panel__link:hover svg {
+  fill: #979797;
+}
+.additional-panel__link:hover .additional-panel__icon {
+  stroke: #979797;
+}
+.additional-panel__link:focus svg, .additional-panel__link:active svg {
+  fill: #E24B33;
+}
+.additional-panel__link:focus .additional-panel__icon, .additional-panel__link:active .additional-panel__icon {
+  stroke: #E24B33;
+}
+.additional-panel__link--bag svg {
+  fill: #ffffff;
+  stroke: #303030;
+}
+.additional-panel__link--bag:hover svg {
+  fill: #ffffff;
+  stroke: #979797;
+}
+.additional-panel__link--bag:focus svg, .additional-panel__link--bag:active svg {
+  fill: #ffffff;
+  stroke: #E24B33;
 }
 
 .additional-panel__counter {
@@ -415,6 +446,9 @@ picture {
   line-height: 14px;
   text-decoration: none;
 }
+.cities__link--current {
+  pointer-events: none;
+}
 .cities__link--current::after {
   content: "";
   width: 16px;
@@ -423,6 +457,9 @@ picture {
   background-repeat: no-repeat;
   position: absolute;
   right: 28px;
+}
+.cities__link:hover {
+  background-color: #FAFAFA;
 }
 
 .user-panel__data {

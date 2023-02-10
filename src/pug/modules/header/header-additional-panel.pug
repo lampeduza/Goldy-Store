@@ -5,7 +5,7 @@ section.header__additional-panel.additional-panel
 	ul.additional-panel__list
 		each element in elements
 			li.additional-panel__item
-				a.additional-panel__link(href= `#${element.path}.html` title= element.value)
+				a.additional-panel__link(class= element.path === 'bag' ? 'additional-panel__link--bag' : '' href= `#${element.path}.html` title= element.value)
 					if element.path === 'favorite'
 						span.additional-panel__counter 23
-					+icon(`${element.path}`, `${element.width}`, `${element.height}`)
+					+icon(`${element.path}`, `${element.width}`, `${element.height}`)(class= element.path === 'chart' ? 'additional-panel__icon' : '')

@@ -16,8 +16,60 @@ $counter-background: #E46942;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	outline: none;
 	position: relative;
+
+	svg {
+		fill: #303030;
+	}
+
+	.additional-panel__icon {
+		stroke: #303030;
+	}
+
+	&:hover {
+		svg {
+			fill: #979797;
+		}
+
+		.additional-panel__icon {
+			stroke: #979797;
+		}
+	}
+
+	&:focus,
+	&:active {
+
+		svg {
+			fill: #E24B33;
+		}
+
+		.additional-panel__icon {
+			stroke: #E24B33;
+		}
+	}
+
+	&--bag {
+		svg {
+			fill: #ffffff;
+			stroke: #303030;
+		}
+
+		&:hover {
+			svg {
+				fill: #ffffff;
+				stroke: #979797;
+			}
+		}
+
+		&:focus,
+		&:active {
+			svg {
+				fill: #ffffff;
+				stroke: #E24B33;
+			}
+		}
+	}
 }
 
 .additional-panel__counter {

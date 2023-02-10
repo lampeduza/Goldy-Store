@@ -56,6 +56,8 @@ $list-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 	text-decoration: none;
 
 	&--current {
+		pointer-events: none;
+		
 		&::after {
 			content: '';
 			width: 16px;
@@ -65,5 +67,9 @@ $list-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 			position: absolute;
 			right: 28px;
 		}
+	}
+
+	&:hover {
+		background-color: #FAFAFA;
 	}
 }

@@ -1543,7 +1543,28 @@ picture {
   display: -webkit-box;
   display: flex;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
+}
+.control__button .control__arrow {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.control__button:hover {
+  background-color: #F5F5F5;
+}
+.control__button:focus, .control__button:active {
+  background-color: #F5F5F5;
+  pointer-events: none;
+}
+.control__button:focus .control__arrow--previous, .control__button:active .control__arrow--previous {
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+.control__button:focus .control__arrow--next, .control__button:active .control__arrow--next {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .dots {

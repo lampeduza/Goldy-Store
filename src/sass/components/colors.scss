@@ -16,6 +16,13 @@
 	&:last-child {
 		margin-right: 0;
 	}
+
+	&--disabled {
+		.colors__button {
+			opacity: 0.3;
+			pointer-events: none;
+		}
+	}
 }
 
 .colors__button {

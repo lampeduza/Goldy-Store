@@ -3,5 +3,5 @@ mixin colors(good)
 		h3.colors__title Цвет
 		ul.colors__list
 			each color in good.colors
-				li.colors__item
+				li.colors__item(class= color.disabled ? 'colors__item--disabled' : '')
 					button.colors__button(class= (color.alternative === 'grey' ? 'colors__button--grey' : color.alternative === 'yellow' ? 'colors__button--yellow' : color.alternative === 'orange' ? 'colors__button--orange' : color.alternative === 'mint' ? 'colors__button--mint' : '') type="button" aria-label=`Изделие ${color.color} цвета`)

@@ -1141,6 +1141,10 @@ picture {
 .colors__item:last-child {
   margin-right: 0;
 }
+.colors__item--disabled .colors__button {
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 .colors__button {
   display: -webkit-box;

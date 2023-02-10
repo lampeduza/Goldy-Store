@@ -134,6 +134,8 @@
   $tab-current-color: #ffffff;
 
   &--current {
+    pointer-events: none;
+    
     .tabs__button {
       color: $tab-current-color;
       background-color: $tab-current-background;

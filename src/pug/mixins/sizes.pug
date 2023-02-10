@@ -1,5 +1,5 @@
 mixin sizes(good)
-	section.sizes
+	section.sizes&attributes(attributes)
 		.sizes__container
 			h3.sizes__title Размеры
 			//- Можно вынести в отдельный миксин
@@ -10,5 +10,5 @@ mixin sizes(good)
 						Также как существующая теория напрямую зависит от&nbsp;экономической целесообразности принимаемых решений.
 		ul.sizes__list
 			each size in good.sizes
-				li.sizes__item
+				li.sizes__item(class= (size.current ? 'sizes__item--current' : size.disabled ? 'sizes__item--disabled' : ''))
 					button.sizes__button(type="button" aria-label= size.description)= size.size

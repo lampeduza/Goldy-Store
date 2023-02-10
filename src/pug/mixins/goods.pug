@@ -19,6 +19,6 @@ mixin goods(goods = [])
 							del.goods__old-price= good.oldPrice
 							span.goods__discount= good.discount
 					+colors(good)(class="goods__colors")
-					+sizes(good)
+					+sizes(good)(class="goods__sizes")
 					+buttons(good)
 					+good-navigation(good)

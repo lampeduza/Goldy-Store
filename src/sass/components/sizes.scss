@@ -16,12 +16,6 @@
 	margin-bottom: 0;
 }
 
-.sizes__list {
-	@include lib.reset-list;
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .sizes__tooltip {
 	width: 18px;
 	height: 18px;
@@ -40,6 +34,8 @@
 	cursor: pointer;
 
 	&:hover {
+		background-color: #D3D3D3;
+
 		~ {
 			.sizes__tooltip-text {
 				display: block;
@@ -49,6 +45,8 @@
 
 	&:active,
 	&:focus {
+		background-color: #D3D3D3;
+		outline: none;
 		~ {
 			.sizes__tooltip-text {
 				display: block;
@@ -84,9 +82,43 @@
 	}
 }
 
+.sizes__list {
+	@include lib.reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -8px;
 
+	max-width: 572px;
+}
 
+.sizes__item {
+	margin-right: 8px;
+	margin-bottom: 8px;
 
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&--current {
+		.sizes__button {
+			color: #ffffff;
+			background-color: #303030;
+			border: 1px solid #303030;
+			pointer-events: none;
+		}
+	}
+
+	&--disabled {
+		.sizes__button {
+			opacity: 0.3;
+			pointer-events: none;
+		}
+	}
+}
+
+.sizes__button {
+	@include lib.ring-sizes-component;
+}
 
 
 

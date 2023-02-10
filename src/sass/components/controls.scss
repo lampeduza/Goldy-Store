@@ -9,5 +9,30 @@
 	background-color: transparent;
 	display: flex;
 	border: none;
+	border-radius: 50%;
 	cursor: pointer;
+
+	.control__arrow {
+		transition: all 0.3s ease-out;
+	}
+
+	&:hover {
+		background-color: #F5F5F5;
+	}
+
+	&:focus,
+	&:active {
+		background-color: #F5F5F5;
+		pointer-events: none;
+
+		.control__arrow {
+			&--previous {
+				transform: translateX(-8px);
+			}
+
+			&--next {
+				transform: translateX(8px);
+			}
+		}
+	}
 }

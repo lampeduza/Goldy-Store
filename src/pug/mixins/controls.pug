@@ -3,4 +3,13 @@ mixin controls(controls = [])
 		each control in controls
 			li.controls__control(class= control.iconName === 'previous' ? 'controls__control--previous' : 'controls__control--next')
 				button.control__button(type="button" aria-label= control.description)
-					+icon(`${control.iconName}`, `${control.iconWidth}`, `${control.iconHeight}`)
+					if control.iconName === 'previous'
+						<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="#303030"/>
+							<path class="control__arrow control__arrow--previous" d="M18.6464 27.3536C18.4512 27.1583 18.4512 26.8417 18.6464 26.6464L21.8284 23.4645C22.0237 23.2692 22.3403 23.2692 22.5355 23.4645C22.7308 23.6597 22.7308 23.9763 22.5355 24.1716L19.7071 27L22.5355 29.8284C22.7308 30.0237 22.7308 30.3403 22.5355 30.5355C22.3403 30.7308 22.0237 30.7308 21.8284 30.5355L18.6464 27.3536ZM35 27.5L19 27.5L19 26.5L35 26.5L35 27.5Z" fill="black"/>
+						</svg>
+					else
+						<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="27" cy="27" r="26.5" stroke="#303030"/>
+							<path class="control__arrow control__arrow--next" d="M35.3536 27.3536C35.5488 27.1583 35.5488 26.8417 35.3536 26.6464L32.1716 23.4645C31.9763 23.2692 31.6597 23.2692 31.4645 23.4645C31.2692 23.6597 31.2692 23.9763 31.4645 24.1716L34.2929 27L31.4645 29.8284C31.2692 30.0237 31.2692 30.3403 31.4645 30.5355C31.6597 30.7308 31.9763 30.7308 32.1716 30.5355L35.3536 27.3536ZM19 27.5L35 27.5L35 26.5L19 26.5L19 27.5Z" fill="black"/>
+						</svg>

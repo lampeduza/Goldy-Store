@@ -212,6 +212,10 @@ picture {
 }
 .header__number svg {
   margin-right: 10px;
+  fill: #303030;
+}
+.header__number:hover svg {
+  opacity: 0.5;
 }
 
 .header__logo {
@@ -266,8 +270,12 @@ picture {
   color: inherit;
   text-transform: uppercase;
 }
+.navigation__link:hover {
+  opacity: 0.5;
+}
 .navigation__link--current {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .search__form {
@@ -366,6 +374,9 @@ picture {
   background-color: transparent;
   cursor: pointer;
 }
+.cities__value:hover .cities__location-icon {
+  opacity: 0.5;
+}
 
 .cities__city {
   line-height: 14px;
@@ -425,6 +436,9 @@ picture {
   text-decoration: none;
   color: inherit;
   line-height: 14px;
+}
+.user-panel__link:hover {
+  opacity: 0.5;
 }
 
 .slider {
@@ -896,6 +910,10 @@ picture {
 }
 .articles__read svg {
   margin-left: 12px;
+  fill: #000000;
+}
+.articles__read:hover {
+  opacity: 0.5;
 }
 
 .articles__link {

@@ -30,6 +30,11 @@
 
 	svg {
 		margin-left: 12px;
+		fill: #000000;
+	}
+
+	&:hover {
+		opacity: 0.5;
 	}
 }
 

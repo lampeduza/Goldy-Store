@@ -15,6 +15,12 @@ $list-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+
+	&:hover {
+		.cities__location-icon {
+			opacity: 0.5;
+		}
+	}
 }
 
 .cities__city {

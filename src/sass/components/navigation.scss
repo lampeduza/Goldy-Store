@@ -36,7 +36,12 @@ $navigation-background: #F8F8F8;
 	color: inherit;
 	text-transform: uppercase;
 
+	&:hover {
+		opacity: 0.5;
+	}
+
 	&--current {
 		opacity: 0.5;
+		pointer-events: none;
 	}
 }

@@ -23,6 +23,13 @@
 
 	svg {
 		margin-right: 10px;
+		fill: #303030;
+	}
+
+	&:hover {
+		svg {
+			opacity: 0.5;
+		}
 	}
 }
 

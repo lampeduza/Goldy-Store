@@ -1,0 +1,27 @@
+@use './global/library.scss' as lib;
+
+.rating {
+	margin-bottom: 24px;
+}
+
+.rating__list {
+	@include lib.reset-list;
+	display: flex;
+}
+
+.rating__element {
+	margin-right: 6px;
+
+	&:last-child {
+		margin-right: 0;
+		margin-left: 4px;
+	}
+
+	svg {
+		cursor: pointer;
+	}
+}
+
+.rating__amount {
+	line-height: 14px;
+}

@@ -1026,6 +1026,88 @@ picture {
   display: flex;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.goods__header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.goods__title {
+  font-family: "Prata", "Times New Roman", serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.goods__code {
+  line-height: 14px;
+  color: #8F8F8F;
+  display: block;
+  margin-bottom: 36px;
+}
+
+.goods__container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.goods__current-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 16px;
+}
+
+.goods__old-price {
+  color: #8F8F8F;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-right: 16px;
+}
+
+.goods__discount {
+  display: inline-block;
+  margin-top: -10px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  background: #E24B33;
+  border-radius: 15px;
+  padding: 4px 8px;
+}
+
+.rating {
+  margin-bottom: 24px;
+}
+
+.rating__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+}
+
+.rating__element {
+  margin-right: 6px;
+}
+.rating__element:last-child {
+  margin-right: 0;
+  margin-left: 4px;
+}
+.rating__element svg {
+  cursor: pointer;
+}
+
+.rating__amount {
+  line-height: 14px;
 }
 
 .controls {

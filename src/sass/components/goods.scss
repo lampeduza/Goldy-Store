@@ -75,4 +75,61 @@
 	display: flex;
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
+
+.goods__header {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.goods__title {
+	font-family: lib.$secondary-font;
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.goods__code {
+	line-height: 14px;
+	color: #8F8F8F;
+	display: block;
+	margin-bottom: 36px;
+}
+
+.goods__container {
+	display: flex;
+	align-items: center;
+}
+
+.goods__current-price {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+	margin-right: 16px;
+}
+
+.goods__old-price {
+	color: #8F8F8F;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	margin-right: 16px;
+}
+
+.goods__discount {
+	@include lib.day-product-discount;
+}
+
+
+
+
+
+
+
+
+
+
+
+

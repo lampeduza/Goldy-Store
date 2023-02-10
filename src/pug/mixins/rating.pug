@@ -4,4 +4,7 @@ mixin rating(good)
 		ul.rating__list
 			each star in good.ratingList
 				li.rating__element
-					+icon(`${star.name === 'full-star' ? 'full-star' : 'empty-star'}`, '17', '16')
+					if star.name
+						+icon(`${star.name === 'full-star' ? 'full-star' : 'empty-star'}`, '17', '16')
+					else
+						span.rating__amount= star.rating

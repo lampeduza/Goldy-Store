@@ -14,8 +14,10 @@ mixin goods(goods = [])
 						+rating(good)
 						h3.goods__title= good.title
 						span.goods__code= `Артикул: ${good.code}`
-						span.goods__current-price= good.currentPrice
-						del.goods__old-price= good.oldPrice
+						.goods__container
+							span.goods__current-price= good.currentPrice
+							del.goods__old-price= good.oldPrice
+							span.goods__discount= good.discount
 					+colors(good)
 					+sizes(good)
 					+buttons(good)

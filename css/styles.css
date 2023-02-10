@@ -855,11 +855,22 @@ picture {
 .card__element:first-child {
   margin-bottom: 10px;
 }
+.card__element:first-child .card__button:focus svg, .card__element:first-child .card__button:active svg {
+  fill: #E24B33;
+}
 
 .card__button {
+  display: -webkit-box;
+  display: flex;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.card__button svg {
+  fill: #C9C9C9;
+}
+.card__button:hover svg {
+  fill: #979797;
 }
 
 .card__content {

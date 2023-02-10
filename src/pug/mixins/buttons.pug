@@ -1,5 +1,5 @@
 mixin buttons(good)
-	ul.goods__buttons.buttons
+	ul.buttons&attributes(attributes)
 		each button in good.buttons
 			li.buttons__element
 				if button.type

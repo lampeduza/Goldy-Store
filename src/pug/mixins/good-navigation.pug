@@ -4,9 +4,14 @@ mixin good-navigation(good)
 		ul.goods__navigation-list
 			each feature in good.features
 				li.goods__navigation-item
-					+icon(`${feature.iconName}`, `${feature.iconWidth}`, `${feature.iconHeight}`)
 					if feature.type
-						button.goods__navigation-button(type= feature.type aria-label= feature.description)= feature.text
+						button.goods__navigation-button(type= feature.type aria-label= feature.description)
+							+icon(`${feature.iconName}`, `${feature.iconWidth}`, `${feature.iconHeight}`)
+							.
+								!{feature.text}
 					else
-						a.goods__navigation-button.goods__navigation-button--link(href= feature.href title= feature.description)= feature.text
+						a.goods__navigation-button.goods__navigation-button--link(href=`#${feature.href}.html` title= feature.description)
+							+icon(`${feature.iconName}`, `${feature.iconWidth}`, `${feature.iconHeight}`)(class="goods__navigation-icon")
+							.
+								!{feature.text}
 

@@ -20,5 +20,6 @@ mixin goods(goods = [])
 							span.goods__discount= good.discount
 					+colors(good)(class="goods__colors")
 					+sizes(good)(class="goods__sizes")
-					+buttons(good)
-					+good-navigation(good)
+					.goods__row
+						+buttons(good)(class="goods__buttons")
+						+good-navigation(good)

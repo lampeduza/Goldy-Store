@@ -1,0 +1,28 @@
+@use './global/library.scss' as lib;
+
+.buttons {
+	@include lib.reset-list;
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+}
+
+.buttons__element {
+	width: 100%;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.buttons__button {
+	@include lib.black-button;
+	cursor: pointer;
+	width: 100%;
+
+	&--link {
+		@include lib.white-button;
+		text-decoration: none;
+	}
+}

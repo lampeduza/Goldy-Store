@@ -5,6 +5,10 @@
 	display: flex;
 	flex-direction: column;
 	max-width: 400px;
+
+	@media (max-width: lib.$tablet-s) {
+		max-width: 100%;
+	}
 }
 
 .buttons__element {

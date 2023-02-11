@@ -3,6 +3,10 @@
 .day-product {
 	margin-bottom: 120px;
 	position: relative;
+
+	@media (max-width: lib.$tablet-s) {
+		margin-bottom: 80px;
+	}
 }
 
 .day-product__title {

@@ -272,6 +272,10 @@
   background: $background;
   border-radius: 15px;
   padding: 4px 8px;
+
+  @media (max-width: var.$tablet) {
+    margin-top: 0; 
+  }
 }
 
 @mixin ring-sizes-component {

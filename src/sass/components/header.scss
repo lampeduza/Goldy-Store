@@ -1,10 +1,16 @@
+@use './global/library.scss' as lib;
+
 .header__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 24px 0 20px 0;
+	padding: 24px 20px 20px 20px;
+
+	@media (max-width: lib.$tablet) {
+		padding: 24px 15px 20px 15px;
+	}
 }
 
 .header__cities {

@@ -8,6 +8,11 @@ $navigation-background: #F8F8F8;
 	grid-template-columns: 1fr 303px;
 	background-color: $navigation-background;
 	margin-top: 23px;
+
+	@media (max-width: lib.$tablet) {
+     grid-template-columns: auto;
+     grid-template-rows: repeat(2, auto);
+  }
 }
 
 .navigation__list {
@@ -45,6 +50,10 @@ $navigation-background: #F8F8F8;
 	@media (max-width: lib.$tablet) {
 		margin-right: 20px;
 	}
+
+	@media (max-width: lib.$tablet) {
+		margin-right: 15px;
+	}
 }
 
 .navigation__link {
@@ -63,4 +72,23 @@ $navigation-background: #F8F8F8;
 		opacity: 0.5;
 		pointer-events: none;
 	}
+}
+
+.navigation__search {
+	@media (max-width: lib.$tablet) {
+     margin-top: 10px;
+     padding: 0 20px 20px 20px;
+
+     .search__container {
+     	width: 100%;
+     }
+
+    .search__search {
+     	margin: 0;
+    }
+
+    .search__field {
+    	padding: 10px;
+    }
+  }
 }

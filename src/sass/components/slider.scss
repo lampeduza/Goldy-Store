@@ -30,5 +30,21 @@
 		&--next {
 			right: 24px;
 		}
+
+		@media (max-width: lib.$tablet-s) {
+			&--previous {
+				left: 10px;
+			}
+
+			&--next {
+				right: 10px;
+			}
+
+			svg {
+				circle {
+					display: none;
+				}
+			}
+		}
 	}
 }

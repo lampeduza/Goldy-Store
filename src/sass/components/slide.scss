@@ -32,6 +32,10 @@ $slide-background: #F8F8F8;
 	&--current {
 		display: grid;
 	}
+
+	@media (max-width: lib.$tablet) {
+		min-height: auto;
+	}
 }
 
 .slide__text {
@@ -39,6 +43,12 @@ $slide-background: #F8F8F8;
 	font-size: 20px;
 	line-height: 20px;
 	margin-bottom: 30px;
+
+	@media (max-width: lib.$tablet) {
+		font-size: 14px;
+		line-height: 14px;
+		margin-bottom: 25px;	
+	}
 }
 
 .slide__title {
@@ -48,6 +58,12 @@ $slide-background: #F8F8F8;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 54px;
+
+	@media (max-width: lib.$tablet) {
+		font-size: 26px;
+		line-height: 26px;
+		margin-bottom: 36px;
+	}
 }
 
 .slide__link {

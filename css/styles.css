@@ -76,6 +76,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   min-height: 100vh;
+  min-width: 480px;
   display: grid;
 }
 
@@ -186,6 +187,11 @@ picture {
 @media (max-width: 1023px) {
   .container {
     padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
   }
 }
 
@@ -598,6 +604,17 @@ picture {
 .slider__controls .controls__control--next {
   right: 24px;
 }
+@media (max-width: 767px) {
+  .slider__controls .controls__control--previous {
+    left: 10px;
+  }
+  .slider__controls .controls__control--next {
+    right: 10px;
+  }
+  .slider__controls .controls__control svg circle {
+    display: none;
+  }
+}
 
 .slide {
   position: relative;
@@ -624,12 +641,22 @@ picture {
   justify-self: end;
   margin-right: 36px;
 }
+@media (max-width: 767px) {
+  .slide picture {
+    margin-right: 0;
+  }
+}
 .slide--current {
   display: grid;
 }
 @media (max-width: 1023px) {
   .slide {
     min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .slide {
+    padding: 30px 30px 30px 70px;
   }
 }
 
@@ -646,6 +673,13 @@ picture {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 767px) {
+  .slide__text {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
 
 .slide__title {
   font-family: "Prata", "Times New Roman", serif;
@@ -660,6 +694,13 @@ picture {
     font-size: 26px;
     line-height: 26px;
     margin-bottom: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .slide__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 30px;
   }
 }
 
@@ -681,6 +722,14 @@ picture {
 @media (max-width: 1023px) {
   .slide__link {
     min-width: 200px;
+  }
+}
+@media (max-width: 1023px) {
+  .slide__link {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 15px;
+    min-width: 170px;
   }
 }
 .slide__link:hover {
@@ -707,6 +756,13 @@ picture {
   line-height: 40px;
   font-weight: 400;
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .popular__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .popular__list {
@@ -781,6 +837,13 @@ picture {
   font-weight: 400;
   margin-bottom: 40px;
   margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .sale__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .sale__tabs {
@@ -1083,6 +1146,13 @@ picture {
   font-weight: 400;
   margin-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .articles__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
 
 .articles__list {
   margin: 0;
@@ -1096,6 +1166,11 @@ picture {
   .articles__list {
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .articles__list {
+    grid-template-columns: auto;
   }
 }
 
@@ -1140,6 +1215,13 @@ picture {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .articles__link {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 20px;
+  }
+}
 
 .articles__date {
   display: block;
@@ -1147,11 +1229,23 @@ picture {
   line-height: 14px;
   margin-bottom: 12px;
 }
+@media (max-width: 1023px) {
+  .articles__date {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 
 .articles__heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+@media (max-width: 1023px) {
+  .articles__heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .day-product {
@@ -1165,6 +1259,13 @@ picture {
   line-height: 40px;
   font-weight: 400;
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .day-product__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .day-product__controls {
@@ -1683,6 +1784,14 @@ picture {
     min-width: 200px;
   }
 }
+@media (max-width: 1023px) {
+  .buttons__button {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 15px;
+    min-width: 170px;
+  }
+}
 .buttons__button:hover {
   background-color: #505050;
 }
@@ -1709,6 +1818,14 @@ picture {
 @media (max-width: 1023px) {
   .buttons__button--link {
     min-width: 200px;
+  }
+}
+@media (max-width: 1023px) {
+  .buttons__button--link {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 15px;
+    min-width: 170px;
   }
 }
 .buttons__button--link:hover {

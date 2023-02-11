@@ -76,6 +76,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   min-height: 100vh;
+  min-width: 360px;
   display: grid;
 }
 
@@ -1098,6 +1099,11 @@ picture {
     gap: 30px;
   }
 }
+@media (max-width: 767px) {
+  .articles__list {
+    grid-template-columns: auto;
+  }
+}
 
 .articles__read {
   line-height: 14px;
@@ -1140,6 +1146,13 @@ picture {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .articles__link {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 20px;
+  }
+}
 
 .articles__date {
   display: block;
@@ -1147,11 +1160,23 @@ picture {
   line-height: 14px;
   margin-bottom: 12px;
 }
+@media (max-width: 1023px) {
+  .articles__date {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 
 .articles__heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+@media (max-width: 1023px) {
+  .articles__heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .day-product {

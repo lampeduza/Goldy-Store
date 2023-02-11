@@ -13,17 +13,37 @@ $navigation-background: #F8F8F8;
 .navigation__list {
 	@include lib.reset-list;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 25px 0 25px 50px;
 	width: 100%;
 	max-width: 987px;
+	margin-bottom: -10px;
+
+	@media (max-width: lib.$desktop-s) {
+		max-width: 100%;
+		padding: 25px;
+	}
+
+	@media (max-width: lib.$tablet) {
+		padding: 20px;
+	}
 }
 
 .navigation__item {
 	margin-right: 60px;
+	margin-bottom: 10px;
 
 	&:last-child {
 		margin-right: 0;
+	}
+
+	@media (max-width: lib.$desktop-s) {
+		margin-right: 40px;
+	}
+
+	@media (max-width: lib.$tablet) {
+		margin-right: 20px;
 	}
 }
 

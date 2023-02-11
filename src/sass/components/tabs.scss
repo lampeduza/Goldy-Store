@@ -16,6 +16,11 @@
 	}
 
 	@include lib.tab-current;
+
+	@media (max-width: lib.$tablet-s) {
+    margin-bottom: 4px;
+    margin-right: 4px;
+  }
 }
 
 .tabs__button {

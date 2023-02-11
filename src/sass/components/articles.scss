@@ -3,6 +3,10 @@
 .articles {
 	margin-bottom: 80px;
 	position: relative;
+
+	@media (max-width: lib.$desktop-s) {
+		margin-bottom: 40px;
+	}
 }
 
 .articles__title {
@@ -14,6 +18,11 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
+
+	@media (max-width: lib.$desktop-s) {
+		grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+		gap: 30px;
+	}
 }
 
 .articles__read {
@@ -36,6 +45,10 @@
 	&:hover {
 		opacity: 0.5;
 	}
+
+	@media (max-width: lib.$tablet-s) {
+    top: 16px;
+  }
 }
 
 .articles__link {
@@ -44,6 +57,12 @@
 
 	picture {
 		margin-bottom: 20px;
+	}
+
+	img {
+		@media (max-width: lib.$desktop-s) {
+			width: 100%;
+		}
 	}
 }
 

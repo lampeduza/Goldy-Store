@@ -10,11 +10,25 @@
 
 	@media (max-width: lib.$tablet) {
 		padding: 24px 15px 20px 15px;
+
+		display: grid;
+		grid-template-columns: auto 183px repeat(2, auto);
+		grid-template-rows: repeat(3, auto);
+		align-items: start;
+    justify-items: center;
 	}
 }
 
 .header__cities {
 	margin-right: 60px;
+
+	@media (max-width: lib.$tablet) {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		margin: 0;
+		width: max-content;
+		justify-self: start;
+	}
 }
 
 .header__number {
@@ -37,12 +51,49 @@
 			opacity: 0.5;
 		}
 	}
+
+	@media (max-width: lib.$tablet) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		margin: 0;
+		margin-bottom: 20px;
+		justify-self: start;
+	}
+}
+
+.header__navigation {
+	@media (max-width: lib.$tablet) {
+		grid-column: 1 / -1;
+		grid-row: 3 / -1;
+	}
 }
 
 .header__logo {
 	margin-right: auto;
+
+	@media (max-width: lib.$tablet) {
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+	}
 }
 
 .header__user-panel {
 	margin-right: 70px;
+
+	@media (max-width: lib.$tablet) {
+		margin: 0;
+		grid-column: 3 / 4;
+		grid-row: 1 / 3;
+		align-self: center;
+		justify-self: end;
+	}
+}
+
+.header__additional-panel {
+	@media (max-width: lib.$tablet) {
+		grid-column: 4 / -1;
+		grid-row: 1 / 3;
+		align-self: center;
+		justify-self: end;
+	}
 }

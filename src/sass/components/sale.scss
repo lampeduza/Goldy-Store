@@ -3,6 +3,10 @@
 .sale {
 	position: relative;
 	margin-bottom: 120px;
+
+	@media (max-width: lib.$desktop-s) {
+		margin-bottom: 60px;
+	}
 }
 
 .sale__title {
@@ -20,6 +24,10 @@
 	position: absolute;
 	top: 10px;
 	right: 0;
+
+	@media (max-width: lib.$tablet-s) {
+    top: 0;
+  }
 }
 
 .sale__secondary-list {
@@ -27,6 +35,10 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+
+	@media (max-width: lib.$desktop-s) {
+		grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+	}
 }
 
 .sale__secondary-link {

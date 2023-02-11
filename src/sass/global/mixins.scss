@@ -126,6 +126,12 @@
     background-color: $tab-pressed-background;
     color: $tab-pressed-color;
   }
+
+  @media (max-width: var.$tablet-s) {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 20px;
+  }
 }
 
 
@@ -135,7 +141,7 @@
 
   &--current {
     pointer-events: none;
-    
+
     .tabs__button {
       color: $tab-current-color;
       background-color: $tab-current-background;

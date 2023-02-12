@@ -1075,10 +1075,10 @@ picture {
 
 .card {
   border: 1px solid #F0F0F0;
-  padding: 16px 24px 26px 24px;
+  padding: 16px 24px 24px 24px;
   display: grid;
   grid-template-columns: 1fr 24px;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   gap: 0 11px;
   position: relative;
 }
@@ -1098,6 +1098,13 @@ picture {
   position: absolute;
   top: 16px;
   left: 24px;
+}
+.card:hover {
+  -webkit-box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
+}
+.card:hover .list {
+  display: block;
 }
 
 .card__images {
@@ -1167,6 +1174,7 @@ picture {
 
 .card__content {
   grid-column: 1/-1;
+  padding-bottom: 24px;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
@@ -1922,6 +1930,7 @@ picture {
 }
 
 .sizes__tooltip-text {
+  line-height: 19.6px;
   padding: 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -1948,6 +1957,25 @@ picture {
           transform: translateX(-50%) rotate(-45deg);
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .sizes__tooltip-text {
+    top: -10px;
+    left: 40px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    min-width: 200px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .sizes__tooltip-text::before {
+    left: -4px;
+    bottom: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+  }
 }
 
 .sizes__list {
@@ -2310,6 +2338,99 @@ picture {
     font-size: 12px;
     line-height: 12px;
     padding: 10px 20px;
+  }
+}
+
+.list {
+  grid-column: 1/-1;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.list__value {
+  background-color: F0F0F0;
+  width: 100%;
+  padding: 9px 16px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  border: none;
+  color: #303030;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22.4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.list__value:hover ~ .list__elements {
+  display: block;
+}
+
+.list__elements {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  padding-top: 17px;
+  padding-bottom: 13px;
+  width: 100%;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.list__elements:last-child {
+  top: calc(100% - 8px);
+}
+
+.list__element {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.list__link {
+  width: 100%;
+  padding: 9px 24px;
+  color: inherit;
+  line-height: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list__link--current {
+  pointer-events: none;
+}
+.list__link--current span {
+  padding-right: 10px;
+  position: relative;
+}
+.list__link--current span::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -20px;
+}
+.list__link:hover {
+  background-color: #FAFAFA;
+}
+@media (max-width: 767px) {
+  .list__link {
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 

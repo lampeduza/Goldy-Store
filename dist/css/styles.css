@@ -1922,6 +1922,7 @@ picture {
 }
 
 .sizes__tooltip-text {
+  line-height: 19.6px;
   padding: 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -1948,6 +1949,25 @@ picture {
           transform: translateX(-50%) rotate(-45deg);
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .sizes__tooltip-text {
+    top: -10px;
+    left: 40px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    min-width: 200px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .sizes__tooltip-text::before {
+    left: -4px;
+    bottom: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+  }
 }
 
 .sizes__list {

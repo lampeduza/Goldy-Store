@@ -56,6 +56,7 @@
 }
 
 .sizes__tooltip-text {
+	line-height: 19.6px;
 	padding: 24px;
 	background-color: #ffffff;
 	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -79,6 +80,24 @@
 		left: 50%;
 		transform: translateX(-50%) rotate(-45deg);
 		box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	@media (max-width: lib.$tablet-s) {
+		top: -10px;
+		left: 40px;
+    transform: translateY(-50%);
+    min-width: 200px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 16px;
+
+
+    &::before {
+			left: -4px;
+			bottom: auto;
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+    }
 	}
 }
 

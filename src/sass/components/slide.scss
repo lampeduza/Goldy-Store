@@ -88,4 +88,5 @@ $slide-background: #F8F8F8;
 
 .slide__link {
 	@include lib.black-button;
+	min-width: 200px;
 }

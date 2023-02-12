@@ -794,6 +794,7 @@ picture {
   text-decoration: none;
   color: #ffffff;
   background-color: #000000;
+  min-width: 200px;
 }
 @media (max-width: 1023px) {
   .slide__link {

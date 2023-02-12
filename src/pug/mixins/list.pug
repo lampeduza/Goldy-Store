@@ -1,0 +1,10 @@
+mixin list(list = [])
+	.list
+		button.list__value(type="button")
+			span.list__data= list.title
+			+icon('arrow-down', '9', '6')
+		ul.list__elements
+			each element in list.arr
+				li.list__element
+					a.list__link(class= element.current ? 'list__link--current' : '')
+						span= element.text

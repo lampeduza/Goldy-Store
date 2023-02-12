@@ -1,6 +1,8 @@
 include ../tabs-data
 include ../card-button-data
 include sale-data
+include sale-description-data
+include sale-sizes-data
 
 section.sale
 	h2.sale__title Распродажа
@@ -19,6 +21,8 @@ section.sale
 							del.card__old-price= card.oldPrice
 							span.card__discount= card.discount
 							p.card__text !{card.text}
+						+list(description)
+						+list(sizes)
 			else
 				li.cards__item
 					article.cards__card.card(tabindex="0")
@@ -28,4 +32,6 @@ section.sale
 						.card__content
 							span.card__current-price= card.actualPrice
 							p.card__text !{card.text}
+						+list(description)
+						+list(sizes)
 	include sale-secondary

@@ -1,0 +1,55 @@
+@use './global/library.scss' as lib;
+
+.timer__list {
+	@include lib.reset-list;
+	display: flex;
+
+	padding: 12px 14px;
+	background-color: #F5F5F5;
+	margin-left: 36px;
+}
+
+.timer__element {
+	border: 1px solid #D0D0D0;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px 5px 4px;
+	min-width: 52px;
+
+	margin-right: 20px;
+	position: relative;
+
+	&:last-child {
+		margin-right: 0;
+
+		&::after {
+			content: '';
+		}
+	}
+
+	&::after {
+		content: ':';
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 700;
+		position: absolute;
+		right: -14px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.timer__digit {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+.timer__word {
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: 300;
+}

@@ -18,6 +18,7 @@ mixin goods(goods = [])
 							span.goods__current-price= good.currentPrice
 							del.goods__old-price= good.oldPrice
 							span.goods__discount= good.discount
+							+timer
 					+colors(good)(class="goods__colors")
 					+sizes(good)(class="goods__sizes")
 					.goods__row

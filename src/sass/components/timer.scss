@@ -1,5 +1,16 @@
 @use './global/library.scss' as lib;
 
+.timer {
+	@media (max-width: lib.$tablet) {
+		width: 100%;
+	}
+
+	@media (max-width: lib.$tablet-s) {
+		width: max-content;
+		margin-left: auto;
+	}
+}
+
 .timer__list {
 	@include lib.reset-list;
 	display: flex;
@@ -7,6 +18,16 @@
 	padding: 12px 14px;
 	background-color: #F5F5F5;
 	margin-left: 36px;
+
+	@media (max-width: lib.$tablet) {
+		margin-left: 0;
+		margin-top: 30px;
+		width: max-content;
+	}
+
+	@media (max-width: lib.$tablet-s) {
+		margin-top: 0;
+	}
 }
 
 .timer__element {
@@ -39,6 +60,18 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
+
+	// @media (max-width: lib.$tablet) {
+	// 	min-width: 48px;
+	// 	margin-right: 10px;
+
+	// 	&::after {
+	// 		font-size: 14px;
+	// 		line-height: 14px;
+	// 		font-weight: 600;
+	// 		right: -8px;
+	// 	}
+	// }
 }
 
 .timer__digit {
@@ -46,10 +79,22 @@
 	line-height: 16px;
 	font-weight: 700;
 	margin-bottom: 2px;
+
+	// @media (max-width: lib.$tablet) {
+	// 	font-size: 14px;
+	// 	line-height: 14px;
+	// 	font-weight: 600;
+	// }
 }
 
 .timer__word {
 	font-size: 11px;
 	line-height: 11px;
 	font-weight: 300;
+
+	// @media (max-width: lib.$tablet) {
+	// 	font-size: 10px;
+	// 	line-height: 10px;
+	// 	font-weight: 400;
+	// }
 }

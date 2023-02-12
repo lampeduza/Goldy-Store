@@ -1572,6 +1572,16 @@ picture {
   -webkit-box-align: center;
           align-items: center;
 }
+@media (max-width: 1023px) {
+  .goods__container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .goods__container {
+    flex-wrap: nowrap;
+  }
+}
 
 .goods__current-price {
   font-weight: 600;
@@ -1594,8 +1604,8 @@ picture {
 }
 @media (max-width: 767px) {
   .goods__current-price {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
@@ -1621,8 +1631,8 @@ picture {
 }
 @media (max-width: 767px) {
   .goods__old-price {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
@@ -2090,6 +2100,20 @@ picture {
   color: #ffffff;
 }
 
+@media (max-width: 1023px) {
+  .timer {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .timer {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+  }
+}
+
 .timer__list {
   margin: 0;
   padding: 0;
@@ -2099,6 +2123,20 @@ picture {
   padding: 12px 14px;
   background-color: #F5F5F5;
   margin-left: 36px;
+}
+@media (max-width: 1023px) {
+  .timer__list {
+    margin-left: 0;
+    margin-top: 30px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+@media (max-width: 767px) {
+  .timer__list {
+    margin-top: 0;
+  }
 }
 
 .timer__element {
